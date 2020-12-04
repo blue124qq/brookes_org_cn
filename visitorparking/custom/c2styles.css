@@ -1,0 +1,79 @@
+/**************************Header and footer***/
+
+#footer{
+    /* background-color: #F0F0F0; */
+    /* color: #aaa; */
+}
+
+@media (min-width: 1px) {
+
+    #header {
+         background: url('VPsmall.png') no-repeat top center; 
+        background-color: #fff;
+    }
+    
+}
+@media (min-width: 1200px) {
+
+    #header {
+        background: url('VPlarge.png') no-repeat top center;
+         background-color: #fff;
+    }
+}
+
+.loginbox {
+     /*color: #fff*/
+}
+
+.loginbox a {
+    /*color: #fff*/
+}
+
+
+
+/*******************links and heading colours */
+
+
+div.form h3 {
+  /* color: #337AB7; */
+}
+
+.searchContent label {
+    /* color: #337ab7; */
+}
+
+.sidepanel h3{
+    /* color: #337ab7; */
+}
+a{
+    /* color:#337ab7; */
+}
+
+.home h2 {
+  /*border-bottom: 2px solid #410041*/
+}
+
+.wizard-menu-all a {
+/*  color: #410041 !important;*/
+}
+
+.myaccountWidget .actionButton a {
+/*  color: #410041*/
+}
+
+.resource-details.form h1 {
+/*  color: #410041*/
+}
+
+/********************************menu bar*/
+
+#menuHead
+{
+/*background-color: #000*/
+}
+
+.carousel-caption-info-mini-title, 
+.carousel-caption-miniad,
+.wizard-carousel .carousel-caption-info  {
+  /*  background: rgba(1, 1, 1, 0.51)*/;
+}

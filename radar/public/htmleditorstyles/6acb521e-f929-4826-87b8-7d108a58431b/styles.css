@@ -1,0 +1,57 @@
+.htmleditor .obu_heading_green
+{
+color: #9eab05;
+font-size:22px;
+font-family: Arial;
+}
+
+.htmlcontent .obu_heading_green
+{
+color: #9eab05;
+font-size:22px;
+font-family: Arial;
+}
+
+.htmleditor .obu_heading_grey
+{
+color: #8d897e;
+font-size: 22px;
+font-family: Arial;
+}
+
+
+.htmlcontent .obu_heading_grey
+{
+color: #8d897e;
+font-size: 22px;
+font-family: Arial;
+}
+
+
+.htmleditor .obu_heading_pink
+{
+color: #d10373;
+font-size: 22px;
+font-family: Arial;
+}
+
+.htmlcontent .obu_heading_pink
+{
+color: #d10373;
+font-size: 22px;
+font-family: Arial;
+}
+
+.htmleditor .obu_body_text
+{
+color: black;
+font-size:12px;
+font-family: Arial;
+}
+
+.htmlcontent .obu_body_text
+{
+color: black;
+font-size:12px;
+font-family: Arial;
+}

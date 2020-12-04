@@ -1,0 +1,138 @@
+/******************************************************************* elements */
+html, body {
+  background: #fff;
+  padding: 0;
+  margin:0;
+  min-width: 1024px
+}
+
+/********************************************************************* layout */
+#wrap {
+  background: #fff;
+  border: none;
+  padding: 0;
+  position: static;
+  min-width: 1024px;
+  width: 100%;
+}
+#header {
+  display : none;
+  visibility: hidden;
+}
+#menuHead {
+    display: none;
+    visibility: hidden;
+}
+.main, #main {
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  min-width: 1024px;
+}
+.sidepanel, .sideNav {
+  display : none;
+  visibility: hidden;
+}
+
+.mainPanel{
+    width: 100% !important;
+}
+
+#footer {
+  display : none;
+  visibility: hidden;
+}
+a[href]:after {
+    content: " ";
+}
+
+/*********************************************************************** menu */
+#menu {
+  display : none;
+  visibility: hidden;
+}
+
+/*********************************************************************** form */
+div.form {
+  border: 1px solid #333;
+  background: #fff;
+  margin: 2em 0;
+  padding: 2ex;
+}
+
+/****************************************************************** signature */
+
+div.signature {
+	float: right; 
+	text-align: left; 
+	padding-top: 40px;
+	visibility: visible;
+}
+
+tr.rowclosed
+{
+    display:table-row !important;
+}
+
+/**********************Bootstrap overrides for print***************/
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5,
+.col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-sm-10, .col-sm-11, .col-sm-12,
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
+.col-md-6, .col-md-7, .col-md-8, .col-md-9,
+.col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+
+.col-sm-12, .col-md-12 {
+    width: 100%;
+}
+
+.col-sm-11, .col-md-11 {
+    width: 91.66666666666666%;
+}
+
+.col-sm-10, .col-md-10 {
+    width: 83.33333333333334%;
+}
+
+.col-sm-9, .col-md-9 {
+    width: 75%;
+}
+
+.col-sm-8, .col-md-8 {
+    width: 66.66666666666666%;
+}
+
+.col-sm-7, .col-md-7 {
+    width: 58.333333333333336%;
+}
+
+.col-sm-6, .col-md-6 {
+    width: 50%;
+}
+
+.col-sm-5, .col-md-5 {
+    width: 41.66666666666667%;
+}
+
+.col-sm-4, .col-md-4 {
+    width: 33.33333333333333%;
+}
+
+.col-sm-3, .col-md-3 {
+    width: 25%;
+}
+
+.col-sm-2, .col-md-2 {
+    width: 16.666666666666664%;
+}
+
+.col-sm-1, .col-md-1 {
+    width: 8.333333333333332%;
+}
+
+.hidden-sm, .hidden-xs {
+    display:inherit !important;
+}

@@ -1,0 +1,264 @@
+:root {
+	--oxford-brookes-lime: #9eab05;
+	--oxford-brookes-charcoal: #424a52;
+	--oxford-brookes-pink: #d10373;
+
+	--header-bg-color: var(--oxford-brookes-charcoal);
+	--header-color: white;
+
+	--footer-bg-color: var(--oxford-brookes-charcoal);
+	--footer-color: white;
+
+	--icon-color: var(--oxford-brookes-pink);
+	--name-color: var(--oxford-brookes-charcoal);
+}
+
+* {
+	font-size: 100%;
+	font-family: 'HelveticaNeueW01-55Roma', 'Helvetica Neue', 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	background-color: var(--header-bg-color);
+	color: var(--header-color);
+}
+
+h1 {
+	font-size: 150%;
+	text-align: center;
+	line-height: 270%;
+	margin: 0;
+}
+
+header a:link, header a:visited, header a:hover {
+	text-decoration: none !important;
+	color: white !important;
+}
+
+header .mdl-layout__header-row {
+	padding: 0;
+}
+
+header h1 {
+	margin: auto;
+}
+
+.header-button {
+	color: var(--header-color);
+	font-weight: bold;
+	font-size: 180%;
+	margin-top: 75%;
+}
+
+#location, .mdl-layout__header {
+	background-color: #8e9398 !important;
+}
+
+#content {
+	background-image: url(../images/8742_part_bright.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#information {
+	background-color:rgba(255, 255, 255, 0.95);
+	border-radius: 20px;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+	padding: 16px;
+	font-size: 300%;
+}
+
+div.dest {
+	width: 95%;
+	margin: 1.5em auto 0;
+}
+
+div.dest h2 {
+	background-color:rgba(255, 255, 255, 0.95);
+	cursor: pointer;
+	line-height: inherit !important;
+	padding: 0.5em !important;
+}
+
+div.dest h2:before {
+	content: url(../images/closed.png);
+	color: var(--icon-color);
+	font-size: 110%;
+	font-weight: bold;
+	padding-right: 0.5em;
+	vertical-align: top;
+}
+
+div.dest table {
+	display: none;
+}
+
+div.dest.running table {
+	display: table;
+}
+
+div.dest.running {
+	margin-bottom: 2em;
+}
+
+div.dest.running h2:before {
+	content: url(../images/open.png);
+}
+
+table {
+	width: 100%;
+	border-spacing: 3px;
+}
+
+td {
+	padding:1%;
+}
+
+td.bus_dest{
+	width:48%;
+}
+
+td.bus_time{
+	width:32%;
+}
+
+#location {
+	line-height: 280%;
+	font-weight: bold;	
+	font-size: 120%;
+	text-align: center;
+	position: relative;
+	height: 50px;
+	padding: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.location_icon {
+	color: var(--icon-color);
+}
+
+.location_name {
+	color: var(--name-color);
+}
+
+#location p {
+	margin: auto;
+}
+
+#location #location_title {
+	line-height: 50px;
+}
+
+#location_key, #ui_type {
+	display: none;
+}
+
+#destinations {
+	padding: 0.5em 0;
+}
+
+#departuresfrom {
+	width: 93%;
+	margin: 2em auto;
+}
+
+#departuresfrom h2 {
+	padding: 10px;
+	margin: 0;
+}
+
+#departuresfrom ul {
+	list-style-type: none;
+	padding: 0px 10px 10px 30px;
+	margin: 0;
+}
+
+#departuresfrom li {
+	background-color:rgba(255, 255, 255, 0.95);
+	border-radius: 20px;
+	margin-bottom: 10px;
+	padding: 11px 16px;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#departuresfrom li a {
+	text-decoration: none;
+}
+
+/*
+footer {
+	background-color: var(--footer-bg-color);
+	color: var(--footer-color);
+	width: 100%;
+	margin-top: 0.5em;
+}
+*/
+.show, .dismiss {
+	float: right;
+}
+
+.show {
+	display: none;
+}
+
+footer .mdl-mini-footer {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+footer p {
+	margin: 0;
+	font-size: 70%;
+}
+
+#currtime {
+	display: none;
+}
+
+/*
+ * spinner by Harold Soto 
+ * https://codepen.io/bernethe/pen/dorozd */
+ 
+.sp-circle {
+		border: 4px rgba(0, 0, 0, 0.25) solid;
+				border-top-width: 4px;
+				border-top-style: solid;
+				border-top-color: rgba(0, 0, 0, 0.25);
+		border-top: 4px black solid;
+		border-radius: 50%;
+		-webkit-animation: spCircRot .6s infinite linear;
+		animation: spCircRot .6s infinite linear;
+}
+
+.sp {
+		width: 32px;
+		height: 32px;
+		clear: both;
+		margin: 20px auto;
+}
+
+/* Spinner Circle Rotation */
+.sp-circle {
+	border: 4px rgba($spCol,0.25) solid;
+	border-top: 4px rgba($spCol,1) solid;
+	border-radius: 50%;
+	-webkit-animation: spCircRot .6s infinite linear;
+	animation: spCircRot .6s infinite linear;
+}
+@-webkit-keyframes spCircRot {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spCircRot {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
+}

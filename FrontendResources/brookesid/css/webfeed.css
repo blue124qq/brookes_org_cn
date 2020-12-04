@@ -1,0 +1,116 @@
+.ui-listview li {
+    display: block;
+    width: 100%;
+    margin: 0 0 0 -24px;
+    list-style-type: none;
+    border-top: 1px solid #adafaf;
+    border-bottom: 1px solid #424a52;
+    padding: 6px;
+}
+
+.badge, .course {
+    border-radius: 50%;
+    padding: 4px 6px;
+    display: inline-block;
+    margin: 3px;
+    color: rgba(255,255,255,1);
+}
+
+/*colors */
+
+.CONF {
+     background-color: #e3ba12; /* Confidence */
+
+}
+
+.ENTC {
+     background-color: #d10373; /* Enterprising creativity */
+}
+
+.CONN {
+     background-color: #9eab05; /* Connectedness */
+}
+
+.GENS {
+     background-color: #003896; /* Generosity of spirit */
+}
+
+
+/* tabs */
+.tabrow {
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+
+.tabrow li {
+  margin: 0 3px;
+  padding: 0 10px;
+  border: 1px solid #424a52;
+  background: #ccc;
+  display: inline-block;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+}
+
+.tabrow li.active {
+  background: #FFF;
+  color: #000;
+  z-index: 2;
+  border-bottom-color: #FFF;
+}
+
+.tabrow {
+  position: relative;
+}
+.tabrow:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #424a52;
+  z-index: 1;
+}
+
+.tabrow:before {
+  z-index: 1;
+}
+.tabrow li {
+    position: relative;
+  z-index: 0;
+}
+
+.tabcontent {
+    display: block;
+    border: 1px solid #424a52;
+    border-top: 0;
+    background-color: #fff;
+    color: #424a52;
+    padding: 0.75em;
+}
+
+/* badge type */
+
+.BUS:before {
+    content: "Business School";
+}
+
+.TDE:before {
+    content: "Technology, Design, and Environment";
+}
+
+.HLS:before {
+    content: "Health and Life Sciences";
+}
+
+.HSS:before {
+    content: "Humanities and Social Sciences";
+}
+
+.UNI:before {
+    content: "open to all"
+}

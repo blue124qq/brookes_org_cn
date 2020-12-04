@@ -1,0 +1,1019 @@
+/*********************************************************** Basics */
+
+body {
+    font-family: "segoe ui", tahoma, arial;
+    font-size: 13px;
+    background-color: #fcfcfc;
+    color: #555;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */
+    color: #888;
+    font-style: italic;
+}
+input:-moz-placeholder, textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #888;
+    font-style: italic;
+    opacity: 1;
+}
+input::-moz-placeholder , textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #888;
+    font-style: italic;
+    opacity: 1;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #888;
+    font-style: italic;
+}
+.placeholder { /* Polyfill placeholder */
+    color: #888;
+    font-style: italic;
+}
+
+
+.break-word {
+    word-wrap: break-word;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*************************************************************Alerts*/
+
+.alert {
+    border-radius: 0;
+    background: no-repeat 15px 50%;
+    color: inherit;
+    padding: 20px 20px 20px 75px;
+    margin: 15px 0;
+}
+
+.alert-float {
+    position: fixed;
+    width: 320px;
+    bottom: 25px;
+    right: 10px;
+    z-index: 1000;
+    overflow: hidden
+}
+
+.alert-success {
+    background-color: #ccffcc;
+    background-image: url("../Icons/SavedIcon.png");
+    border-color: green;
+}
+
+.alert-info {
+    background-color: #b9dcff;
+    background-image: url("../Icons/InfoIcon.png");
+    border-color: rgb(153, 204, 255);
+}
+
+.alert-warning {
+    background-color: #fff2cc;
+    background-image: url("../Icons/WarningIcon.png");
+    border-color: rgb(220, 200, 0);
+}
+
+.alert-danger {
+    background-color: #ffebeb;
+    background-image: url("../Icons/ErrorIcon.png");
+    border-color: rgb(164, 8, 8);
+}
+
+/**********************************************************************headings and text**/
+h1 {
+    font-size: 1.5em;
+}
+
+
+h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 2px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+.lolight {
+    color: #888;
+}
+
+/*************************************************************************Header and Footer*/
+#footer {
+    background-color: #F0F0F0;
+    padding-top: 10px;
+    color: #aaa;
+    height: 60px;
+    margin-bottom: 0;
+    border-top: #8DA0AF 1px solid;
+}
+    #footer input {
+        margin-bottom: 0;
+    }
+
+#header {
+    background-color: #fff;
+    height: 90px;
+    border-radius: 0;
+}
+
+#wrap {
+    padding-bottom: 60px;
+}
+
+/*********************************************************** Navigation */
+
+.loginbox {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.loginbox a {
+    color:#333;
+}
+
+#menuHead {
+    background-color: #1072be;
+}
+
+#menuHead .container-fluid, #menuHead .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-header button {
+    width: auto !important;
+}
+
+.navbar-toggle {
+    background-color: #ccc;
+}
+.icon-bar {
+    border-color: #333;
+    background-color: #888;
+}
+
+.dropdown li {
+ border-bottom: 0 !important;
+}
+  
+.navbar-nav
+{
+    background-color: transparent;
+    border-radius: 0;
+}
+
+    .navbar-nav > li {
+        min-height: 32px;
+    }
+
+.navbar-nav li a {
+     color: white;
+    }
+
+.navbar-nav > li:first-child a {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0;
+}
+.navbar-nav > li:last-child a {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.navbar-nav > li > a:hover,  .navbar-nav > li > a:focus
+{
+    background-color: #434040;
+    background-color: rgba(99, 96, 96, 0.59);
+    color: #eeeeee;
+}
+
+ .navbar-nav > .open > a, 
+ .navbar-nav > .open > a:hover, 
+ .navbar-nav > .open > a:focus {
+    background-color: #434040;
+    background-color: rgba(99, 96, 96, 0.59);
+    color: #eeeeee;
+}
+
+    .navbar-nav .u {
+        text-decoration: none;
+        border-bottom: 1px solid #777
+    }
+
+.dropdown-menu > li > a {
+    color: #333
+}
+
+.navbar-nav > li > a {
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+
+/**********************************************wizard menu in navigation*/
+
+.wizard-menu {
+    padding-top: 5px;
+}
+
+.wizard-menu li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+    border: 1px solid #ccc
+}
+
+.wizard-menu2Col {
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+        column-count:2;    
+}
+
+.wizard-menu-all a {
+    color: #337ab7 !important;
+    text-align: right;
+}
+.wizard-menu-all a img {
+    width: auto;
+    height: auto;
+    margin-right: 0;
+    border: none;
+}
+
+
+/**************************************************Panels*/
+.sidepanel {
+    background-color: #ffffff;
+    border: solid 1px #ccc;
+    padding: 6px;
+    
+}
+    .sidepanel h3 {
+        margin-top:7px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        color: #337ab7;
+        padding-bottom: 3px;
+    }
+
+.banner {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+    .banner p {
+        margin-bottom: 0;
+    }
+
+
+
+
+/*******************************************************Form*/
+
+div.form {
+    background-color: #fff;
+    border: solid 1px #ccc;
+}
+
+div.footer {
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    clear: both;
+}
+
+div.form h2 {
+    margin-top:1em;
+    margin-bottom: 0.5em;
+}
+
+div.form table.form {
+    border: none;
+}
+
+div.form h3 {
+    color: #337ab7;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+}
+
+/****************************  pager  ************************************/
+.pagination-summary {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 8px;
+    display: inline-block;
+    padding: 8px 0 0 0
+}
+
+.pagination {
+    margin: 0 0 5px 0;
+}
+
+.pagination-sm > li > a, .pagination-sm > li > span {
+    padding: 5px 9px;
+}
+
+.pagination > li > a, .pagination > li > span {
+    border: 1px solid #fff;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin: 0 3px 0 0;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    margin: 0 0 0 2px;
+}
+
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+    cursor: default;
+}
+
+/*******************************************************date pager***********/
+div.datepager {
+    padding: 6px;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-color: #cccccc;
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+div.datepager div
+{
+    margin: 0;
+}
+
+div.datepager div.l , div.datepager div.datepager_date
+{
+    font-size: 1.2em;
+    text-align: left;
+}
+
+div.datepager div.datepager_links
+{
+    text-align: right;
+}
+
+div.datepager div.datepager_links a.icon img{
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+    margin-right: 3px;
+}
+div.datepager div.datepager_links a.iconafter img {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+div.datepager div.datepager_links .ui-datepicker-trigger {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+/******************************************************************link list*/
+ul.links {
+    margin: 10px 0 20px 0;
+    list-style-type: none;
+    word-wrap: break-word;
+    padding-left: 2px;
+
+}
+
+    ul.links li {
+        padding: 0.5ex 0;
+    }
+
+        ul.links li.back {
+            padding-top: 2ex;
+        }
+        
+        ul.links li a img {
+             width: 20px;
+             height: 20px;
+        }
+
+/***********************************************************Buttons*/
+
+input.btn, a.btn, span.btn, button.btn {
+    margin: 0.6ex 1ex 2ex 0;
+    min-width: 12ex;
+    width: auto;
+    overflow: visible;
+}
+
+.input-group-btn button.btn {
+    min-width: 0 !important;
+}
+
+.btn-default {
+  color: #333333;
+  background-color: #d1d1d1;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ccc;
+  border-color: #bbb;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #eee;
+  border-color: #cccccc;
+}
+
+/**************************************Fuzzy search for resource*/
+
+.fuzzySearch {
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+    .fuzzySearch input {
+        display: block;
+        float: left;
+        margin: 0;
+        font-size: 1.2em;
+        line-height: 1.4;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 40px;
+    }
+
+    .fuzzySearch input[type='text'] {
+        width: 70%;
+        color: #337ab7;
+        border: solid 1px #ccc;
+        padding-left: 10px;
+    }
+
+        .fuzzySearch input[type='submit'] {
+            margin-left: -1px;
+            border-radius: 0 4px 4px 0;
+            min-width: 50px!important;
+            background-position: 15px center;
+            border: 1px solid #ccc;
+        }
+
+
+/**********************   Icons   ****************/
+.icon16, .icon20 {
+    display: inline-block;
+    width:  16px;
+    height: 16px;
+    position: relative;
+    top: -0.1em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    vertical-align: middle;
+}
+.icon20 {
+    width: 20px;
+    height: 20px;
+}
+
+a.external {
+    background-image: url('../Images/new-window-black.png');
+    background-position: right center;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+}
+
+.icon-resource-status-InService {
+    background-image: url("../icons/approve.png");
+}
+.icon-resource-status-InService.grey {
+    background-image: url("../icons/approve-disabled.png");
+}
+.icon-resource-status-InMaintenance {
+    background-image: url("../icons/temp-not-in-service.png");
+}
+.icon-resource-status-InMaintenance.grey {
+    background-image: url("../icons/temp-not-in-service-disabled.png");
+}
+.icon-resource-status-NotInService {
+    background-image: url("../icons/denied.png");
+}
+.icon-resource-status-NotInService.grey {
+    background-image: url("../icons/denied-disabled.png");
+}
+
+.icon-resource-status-NotOnLoan {
+    background: url("../icons/notonloan.png") 0 50% no-repeat;
+    background-size: 13px;
+}
+.icon-resource-status-CheckOut {
+    background: url("../icons/checkedout.png") 0 50% no-repeat;
+    background-size: 13px;
+}
+.icon-resource-status-NotInUse {
+    background: url("../icons/notinuse.png") 0 50% no-repeat;
+    background-size: 14px;
+}
+.icon-resource-status-InUse {
+    background: url("../icons/inuse.png") 0 50% no-repeat;
+    background-size: 14px;
+}
+.icon-resource-status-warning {
+    background: url("../icons/warning.png") 0 50% no-repeat;
+}
+
+.icon-role {
+    background: url("../icons/users.png") 0 50%;
+    background-repeat: no-repeat;
+}
+
+.icon-resource-status{
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+/*********************************************************resource status layout******/
+.resource-status-title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.resource-status-date {
+    padding-left: 25px;
+    margin-bottom: 5px
+}
+
+.resource-status-comment {
+    color: #888;
+    padding-left: 25px;
+}
+
+/************************************** chart.js *******************************/
+.chart-legend ul { 
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+    font-size: 12px;
+    color: #888;
+}
+.chart-legend ul li { 
+    list-style:none; 
+    display: inline; 
+    margin-right: 10px 
+}
+.chart-legend li span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+/************************************** tables *******************************/
+table.table th {
+    background: white;
+    border-bottom: 1px solid #999 !important;
+    border-top: 1px solid #ddd !important;
+    padding: 3px 6px;
+    color: #666;
+    height: 40px;
+}
+
+table.table {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #bbb;
+    Font-size: 1em;
+    border-left: 0;
+    border-right: 0;
+}
+
+table.striped tr:nth-child(2n+3) {
+   background-color: #f8f8f8;
+   transition: background 1s;
+}
+
+table.stripedwithhead tbody tr:nth-child(2n+2) {
+    background-color: #f8f8f8;
+    transition: background .5s;
+}
+
+table.table tr:hover {
+    background: #f5f5f5;
+    transition: background .5s;
+}
+
+table.stripedwithhead tbody tr:hover:nth-child(2n+2) {
+    background-color: #f2f2f2;
+    transition: background .5s;
+}
+
+table.table td.rb, table.table th.rb {
+    border-right: solid 1px #999;
+}
+
+table.table td.lb, table.table th.lb {
+    border-left: solid 1px #999;
+}
+
+th.c, td.c {
+    text-align: center;
+}
+
+td.r, th.r{
+    text-align: right;
+}
+
+/************************************************************* Booking colors */
+.c-1 {
+    /* Time pad uses black */
+    background-color: #000 !important;
+}
+
+.c1 {
+    background-color: #1d2438 !important;
+    color: #fff !important;
+}
+
+.c2 {
+    background-color: #465788 !important;
+    color: #fff !important;
+}
+
+.c3 {
+    background-color: #033859 !important;
+    color: #fff !important;
+}
+
+.c4 {
+    background-color: #416064 !important;
+    color: #fff !important;
+}
+
+.c5 {
+    background-color: #59a0cc !important;
+}
+
+.c6 {
+    background-color: #79827a !important;
+}
+
+.c7 {
+    background-color: #b8bcb8 !important;
+}
+
+.c8 {
+    background-color: #77a1a6 !important;
+}
+
+.c9 {
+    background-color: #703030 !important;
+    color: #fff !important;
+}
+
+.c10 {
+    background-color: #a3022a !important;
+    color: #fff !important;
+}
+
+.c11 {
+    background-color: #9e3852 !important;
+}
+
+.c12 {
+    background-color: #ba5e5e !important;
+}
+
+.c13 {
+    background-color: #c77966 !important;
+}
+
+.c14 {
+    background-color: #f2937e !important;
+}
+
+.c15 {
+    background-color: #e7c7bf !important;
+}
+
+.c16 {
+    background-color: #ddab9e !important;
+}
+
+.c17 {
+    background-color: #c49b51 !important;
+}
+
+.c18 {
+    background-color: #c69000 !important;
+}
+
+.c19 {
+    background-color: #f2d6a2 !important;
+}
+
+.c20 {
+    background-color: #fff2cf !important;
+}
+
+.c21 {
+    background-color: #CA7A7A !important;
+    color: #222;
+}
+
+.c22 {
+    background-color: #b15b5b !important;
+}
+
+/*************************************************************************/
+
+.busy {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5000;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.busy-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 210px;
+    margin-left: -125px;
+    margin-top: -100px;
+    text-align: center;
+    color: #333;
+    border: 15px solid #F8F8F8;
+    border-radius: 3px;
+    background: #F8F8F8;
+    font-weight: bold;
+}
+    .busy-content p {
+        margin: 10px 0 0 0;
+    }
+
+/*** Radio Buttons & On/Off slider "switch" ***/
+.RadioButtonSelection {
+    list-style-type: none;
+    margin: 1em 0;
+    padding-left: 0;
+    overflow: hidden;
+    display: table;
+    table-layout: auto;
+}
+
+.RadioButtonSelection li {
+    display:table-cell;
+    text-align: center;
+}
+
+.RadioButtonSelection input {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+.RadioButtonSelection li input[type="radio"] + label {
+    display: block;
+    padding: 6px 12px;
+    margin: 0;
+    border: 1px solid #CCC !important;
+    background-color: #ededed;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: normal;
+    transition: background 0.5s,  box-shadow 0.5s;
+    max-width:none;
+    color: inherit;
+}
+
+.RadioButtonSelection li + li input[type="radio"] + label {
+    border-left:0 !important;
+}
+
+.RadioButtonSelection li:first-child label {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.RadioButtonSelection li:last-child label {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.RadioButtonSelection li label:hover {
+    background-color: #E6E6E6;
+    transition: background 0.5s , box-shadow 0.5s;
+}
+
+.RadioButtonSelection li label:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+
+.RadioButtonSelection li input:checked + label {
+    background-color: #C4D8E7;
+}
+
+.RadioButtonSelection.OnOff li label {
+    background-color: #FFF;
+}
+
+.RadioButtonSelection.OnOff li:nth-child(1) input:checked + label {
+    background-color: #d9534f;
+    color: #FFF;
+}   
+
+.RadioButtonSelection.OnOff li:nth-child(2) input:checked + label {
+    background-color: #5cb85c;
+    color: #FFF;
+}
+
+/**********************fancy check box ***/
+
+.fancyCheck {
+    width: 4.5rem;
+    height: 2.1rem;
+    position: relative;
+}
+
+.fancyCheck input {
+    opacity: 0;
+}
+
+.fancyCheck label {
+    position: absolute;
+    background-color: #A09595;
+    color: #A09595;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    border-radius: 3.125rem;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.fancyCheck input:focus ~ label {
+    box-shadow: inset 0 2px 2px rgba(0,0,0,.075), 0 0 18px rgb(102, 175, 233);
+}
+
+.fancyCheck label:after {
+    content: "";
+    display: block;
+    width: 1.475rem;
+    height: 1.475rem;
+    border-radius: 3.125rem;
+    cursor: pointer;
+    position: absolute;
+    top: .3125rem;
+    z-index: 1;
+    left: .5rem;
+    background-color: #FFFFFD;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+
+.fancyCheck input[type=checkbox]:checked ~ label {
+    background-color: #4fbe79;
+    color: #4fbe79;
+}
+
+.fancyCheck input[type=checkbox]:checked ~ label:after {
+    left: 2.5rem;
+}
+
+.fancyCheck input[type=checkbox]:disabled ~ label {
+    background-color: #bbb;
+    color: #bbb;
+}
+
+.wrapTextToFit {
+    word-break: break-all;
+}
+
+/******************** Confirm modal  */
+.confirm-table {
+    width: 100%;
+}
+
+.confirm-table .table-row:last-of-type .table-cell {
+    border-bottom: 0;
+}
+
+.confirm-table .table-cell {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #CCC;
+}
+
+.confirm-table p {
+    margin: 0;
+}
+
+.confirm-table p + p {
+    margin: 10px 0 0 0;
+}
+
+.modal-body .confirm-table {
+    margin: -15px 0;
+}
+
+.confirm-icon-cell {
+    padding-left: 30px;
+    width: 110px;
+}
+
+.confirm-table .checkbox label {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.icon-warning-50 {
+    background: url('../icons/warning50.png') left center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-approve-50 {
+    background: url('../icons/approve50.png') left center no-repeat;
+    width: 50px;
+    height: 50px;
+}
+
+/********   Divs table *********/
+.table-div {
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.table-cell.top {
+    vertical-align: top;
+}

@@ -1,0 +1,3865 @@
+/*********************************************************** Basics */
+
+
+    body.stopScrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+/*********************************************************** Navigation */
+
+#menuHead {
+    min-width: 1040px
+}
+  
+
+#header {
+    min-width: 1040px
+}
+
+blockquote {
+    font-size: 15px;
+    font-style: italic;
+}
+
+/************************************************** Custom container */
+.container {
+    /*margin: 0 auto;*/
+    max-width: 1200px;
+}
+
+#wrap {
+    min-width: 1000px;
+}
+
+html, body {
+    height: 100%; /* The html and body elements cannot have any padding or margin. */
+}
+
+
+#footer {
+
+    min-width: 1040px; /*to hold size on mobile*/
+}
+
+
+[class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.column60 {
+    width: 50%;
+}
+.column80 {
+    width: 75%;
+}
+.column100 {
+    width: 100%;
+}
+.column20 {
+    width: 23%;
+}
+.floatright {
+    float: right;
+}
+.floatleft {
+    float: left;
+}
+
+
+
+
+/**********************************************************************RESPONSIVE Header and footer*****/
+@media (min-width: 1px) {
+    #footer .container, #header .container {
+        margin-left: 0;
+        width: 970px;
+    }
+
+    #header {
+        background: url('../images/header-med.png') no-repeat top center;
+        background-color: #fff;
+    }
+
+        .resource-list .resource-image img {
+        padding: 0;
+        margin: 0;
+        width: 130px;
+        height: 130px;
+        border: 1px solid #CCC;
+    }
+
+    #menuHead .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-text {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .nav > li > a {
+        padding-left: 10px;
+    }
+
+    .wizard-list-item h3 {
+        font-size: 1.2em;
+    }
+
+    .wizard-list-item {
+        font-size: 11px;
+    }
+
+    .availability-setup input[type=submit] {
+        min-width: 0;
+    }
+
+    table.dashboard-checking-list  {
+            font-size: 12px;
+        }
+
+}
+@media (min-width: 1200px) {
+    #footer .container, #header .container {
+        margin-left: auto;
+        width: 1170px
+    }
+    #header {
+        background: url('../images/header.png') no-repeat top center;
+        background-color: #fff;
+    }
+
+    .resource-list .resource-image img {
+        padding: 0;
+        margin: 0;
+        width: 160px;
+        height: 160px;
+        border: 1px solid #CCC;
+    }
+    #menuHead .container {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    .navbar-text {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .nav > li > a {
+        padding-left: 15px;
+    }
+
+    .wizard-list-item h3 {
+        font-size: 1.4em;
+    }
+
+    .wizard-list-item {
+        font-size: 12px;
+    }
+
+    .availability-setup input[type=submit] {
+        min-width: 7ex;
+    }
+
+        table.dashboard-checking-list  {
+            font-size: 13px;
+        }
+
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+@media (max-width: 720px) {
+    @-ms-viewport {
+    width: 1040px;
+    }
+}
+@media only screen and (min-device-width: 768px) {
+
+    body.stopScolling {
+        position: fixed;
+    }
+}
+
+/**************************************************************************/
+.icon-button {
+    background-repeat:no-repeat; 
+    background-position: 5px center;
+}
+
+.icon-button-after {
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    padding-right: 35px
+}
+
+a.icon img, td.icon img, span.anchorcontrol img {
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+    margin-right: 3px;
+}
+a.iconafter img {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+.radio, .checkbox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.radio + .radio, .checkbox + .checkbox {
+    margin-top: -10px;
+}
+
+.radio label, .checkbox label {
+    display: inline;
+    margin: 0 !important;
+}
+
+
+
+legend {
+	width: auto;
+	padding: 0;
+	margin-bottom: 8px;
+	font-size: 18px;
+	line-height: 30px;
+	border: 0;
+}
+
+.lineThru{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   z-index: 3
+}
+
+    .lineThru:before {
+        width: 40px;
+        height: 10px;
+        background-color: #fff;
+        content: '';
+        margin: -5px 0 0 -20px;
+        left: 50%;
+        position: absolute;
+        top: 56%;
+        z-index: -1;
+    }
+    .lineThru:after {
+        border-bottom: 1px solid #ccc;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        z-index: -2;
+    }
+
+th, td {
+margin: 0;
+padding: 0;
+text-align: left;
+vertical-align: top;
+}
+
+input.r
+{
+    text-align: right;
+}
+
+caption
+{
+    text-align: left;
+}
+.active
+{
+    color: #555;
+}
+.nowrap
+{
+    white-space: nowrap;
+}
+.error
+{
+    color: #d00;
+    font-weight: bold;
+}
+.success
+{
+    color: #090;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+}
+.warning
+{
+    color: #fd8e1b;
+    font-weight: bold;
+}
+.error-source
+{
+    border: 1px solid;
+    border-color: red !important;
+}
+
+.error-inline {
+    color: red !important;
+}
+
+.popover-error .popover-content {
+    color: red;
+}
+
+.warning-inline {
+    color: orange !important;
+}
+
+.hidden
+{
+    display: none !important;
+    visibility: hidden;
+}
+.expression
+{
+    color: #090;
+    font-weight: bold;
+}
+.u
+{
+    text-decoration: underline;
+}
+
+.function
+{
+    color: rgb(0,0,255);
+}
+
+.operator
+{
+    color: rgb(0,0,255);
+}
+
+.attribute
+{
+    color: rgb(200,0,0);
+}
+
+.attributenumber
+{
+    color: rgb(200,0,0);
+}
+
+.red
+{
+    color: #d00;
+}
+
+a.external, .external-img {
+    background-image: url('../Images/new-window-black.png');
+    background-position: right center;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+}
+a.disabled:focus, a.disabled:hover
+{
+    color: #333;
+    text-decoration: none;
+}
+.disabled
+{
+    color: #333;
+}
+fieldset {
+    margin-bottom: 1.5em;
+    padding: 1ex 2ex 3ex 2ex;
+    border: 1px solid #ccc;
+}
+
+
+.itemsList li
+{
+    list-style-type: none;
+}
+
+ul.itemsList
+{
+    margin: 1em 0 1em 0;
+    padding: 0;
+}
+
+.required {
+    background-image: url("../Icons/required.png");
+    width: 8px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.eventTitle {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/********************************************************************** still used by date pager */
+div.pager
+{
+    overflow: hidden;
+}
+div.pager div
+{
+    margin-bottom: 0.5em;
+}
+div.pager div.l
+{
+    float: left;
+    font-weight: normal;
+    width: auto !important;
+}
+div.pager div.r
+{
+    float: right;
+    white-space: nowrap;
+    width:auto !important;
+}
+div.pager a
+{
+    margin: 0 1ex 0 0;
+}
+div.pager a.iconafter
+{
+    margin: 0 0 0 1ex;
+}
+
+/*****************************************pager************************************/
+
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+    z-index: 2; /*missing in bootstrap-forms.css but in bootstrap.css*/
+}
+
+/**************************************************************statusbar*/
+
+.statusbar {
+    list-style-type: none;
+    margin: 0 0 1.3em 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+}
+
+    .statusbar li {
+        display: table-cell;
+        text-align: center;
+        color: #2B4158;
+        border-bottom: solid 2px #aaa;
+        padding: 0.2em 0.5em 0.8em 0.5em;
+        max-height: 40px;
+        position: relative;
+        font-size: 13px;        
+    }
+
+        .statusbar li.current {
+            font-weight:bolder;
+        }
+
+        .statusbar li.prev {
+            border-bottom: solid 2px #00B800;
+        }
+
+
+li.current:after, li.prev:after {  
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+li.next:after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    margin-left: -6px;
+    background: transparent url('../images/other.png') no-repeat;
+}
+
+li.prev:after {
+    background: transparent url('../images/prev.png') no-repeat;
+}
+
+li.current:after {
+    background: transparent url('../images/current.png') no-repeat;
+}
+
+li.current:before {
+    content: "";
+    width: 49%;
+    border-bottom: 2px solid #00B800;
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+}
+
+/*********************************************************** Compact fieldset */
+
+fieldset.compact {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+    fieldset.compact label {
+        margin-top: 0;
+    }
+
+span.urlLinkWrapping {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 25ex;
+    overflow: hidden;
+}
+
+
+
+/********************************************************** border for photos */
+img.photo {
+    border: 1px solid #999;
+    
+}
+
+
+
+input.anchorbutton {
+    width: auto;
+    overflow: visible;
+}
+
+/******************************************************************* datetime */
+table.datetime {
+    margin-bottom: 1ex;
+}
+
+    table.datetime td {
+        border: 0;
+        height: 2px;
+        }
+
+    table.datetime td.date {
+        width: 40%;
+    }
+
+    table.datetime td.time {
+        
+        width: 40%;
+    }
+
+    table.datetime label {
+        margin-top: 0;
+    }
+
+/* supress error message and show only icon when in side content */
+#side .datetime .date .error {
+    text-indent: -10000px;
+}
+
+#side .datetime .time .error {
+    text-indent: -10000px;
+}
+
+/******************************************************************* daterange */
+.daterange {
+    overflow: hidden;
+    text-align: center;
+}
+.datewrap {
+    text-align: left;
+}
+.daterange .datewrap
+{
+    float: left;
+    width: 46%;
+}
+.daterange .datewrap + .datewrap
+{
+    float: right;
+    width: 46%;
+}
+
+/****************************************************************** TimeField */
+.timepicker {
+    max-width: 12.6ex;
+}
+.ui-timepicker-wrapper {
+    width: 12.6ex;
+}
+.ui-timepicker-list li {
+    padding: 0 0 1px 3px !important;
+}
+.ui-timepicker-wrapper {
+    border: 1px solid #CCC !important;
+}
+
+
+/****************************************************************** MoneyField */
+.moneyfield {
+    text-align: right;
+}
+
+/****************************************************************** percentField */
+.percentfield {
+    text-align: right;
+}
+
+
+/***************************************************DateField*/
+.datefield {
+    position: relative;
+    width: 15ex;
+}
+.datefield .ui-datepicker-trigger {
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 7px;
+    cursor: pointer;
+}
+.datefield[disabled] + .ui-datepicker-trigger {
+    display: none;
+}
+.ui-datepicker td {
+    height: auto;
+}
+.ui-datepicker .ui-datepicker-title select {
+    padding: 1px;
+}
+.ui-datepicker .ui-datepicker-header {
+	color: #555;
+}
+.ui-datepicker th {
+    color: #555;
+}
+.ui-datepicker td .ui-state-default {
+    color: #555;
+}
+.datepicker + .ui-datepicker-trigger {
+    margin: 0 5px 5px 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.ui-widget-header a {
+    cursor: pointer;
+}
+
+/******************************************************************* minutesselector */
+div.minutesselector {
+    overflow: hidden;
+}
+    div.minutesselector .minutes {
+        float: left;
+        width: 40%;
+        padding-right: 6px;
+    }
+    div.minutesselector .unit {
+        float: left;
+        width: 60%;
+        padding-left: 6px;
+    }
+
+/****************************************************************** signature */
+
+div.signature {
+    visibility: hidden;
+}
+
+/************************************************************************ add */
+table.add td {
+    padding: 0 0 1ex 1ex;
+    width: 50%;
+}
+
+    table.add td.options {
+        padding: 0 1ex 1ex 0;
+    }
+    
+/*********************************************************** checkBoxList */
+
+.CheckBoxList label
+{
+    display: inline !important;
+    width: auto;
+    white-space: normal;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+.CheckBoxList input {
+    position: relative;
+    top: 2px;
+}
+
+.CheckBoxList input[type=text]
+{
+    width: 100px;
+}
+
+ul.CheckBoxList {
+    margin: 3px 0 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.CheckBoxList input {
+    margin-left: 0;
+}
+
+    ul.CheckBoxList li {
+        margin-top: 2px;
+    }
+
+.CheckBoxList td {
+    border: none;
+    height: 1.1em;
+}
+/*********************************************************** RadioList */
+.RadioButtonList input {
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.RadioButtonList label {
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+    white-space: normal;
+    margin-top: 0;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.RadioButtonList td {
+    border:none
+}
+
+.RadioButtonList li {
+    list-style: none;
+    padding-bottom: 6px
+}
+ul.RadioButtonList {
+    padding-left: 5px;
+}
+
+/*********************************************************** */
+#supplierordersurltd {
+    width: 40%;
+    text-align: right;
+}
+
+.htmlText {
+    margin-top: 0.7em;
+    overflow-x: auto;
+    overflow-y: auto;
+    min-height: 3em;
+    max-height: 15em;
+}
+
+.expandedRowHtmlText {
+    white-space: pre-line;
+    padding-left: 1em !important;
+    padding-bottom: 1.5em !important;
+}
+
+table.days td {
+    padding-top: 5px;
+}
+
+/*************************************************************TodaysAppointments*/
+
+.currentApp {
+    height: 5em !important;
+    background: #e2ffdd !important;
+}
+
+.upcomingApp {
+    height: 4em !important;
+    background: #fcf19c !important;
+}
+
+.futureApp {
+    height: 3em !important;
+    background: #ffdedd !important;
+}
+
+
+/*********************************************************************** list */
+
+table
+{
+    border: 0;
+    border-collapse: collapse;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+td {
+    height: 35px;
+}
+
+
+table.table.listFixed {
+    margin-bottom: 1em;
+    table-layout: fixed;
+}
+
+table.table tr.alt {
+    background: #f9f9f9;
+    transition: background .5s;
+}
+
+table.table tr.group {
+    padding: 2px;
+    background: #eeeeee;
+    font-weight: bold;
+}
+
+table.table tr.group:hover {
+    background: #eeeeee;
+}
+
+table.table tr {
+    background: #fdfdfd;
+    transition: background .5s;
+    height : 3em;
+}
+
+table.table td.sum {
+    font-weight: bold;
+    border-top: 2px solid Black;
+    border-bottom: 0 solid Black;
+    padding: 3px 6px;
+    vertical-align: top;
+}
+
+tr.error {
+    background: #FF9999;
+}
+
+table.table th img {
+    margin-right: 3px;
+    height: 1em;
+}
+
+table.table th img.allow-deny {
+    margin: 0;
+    height: auto;
+}
+
+table.table td {
+    padding: 3px 6px;
+    vertical-align: top;
+    word-wrap: break-word;
+    border-bottom: 1px solid #bbb;
+}
+
+table.table .shrink {
+    width: 35px;
+}
+
+table.table .shrink1 {
+    width: 1px;
+}
+
+table.table td.almanacTimeSpanCellWidth {
+    width: 100px;
+    padding-right: 150px;
+}
+
+table.table th.nomargin, table.table th.nomargin img, table.table td.nomargin, table.table td.nomargin img {
+    padding: 0;
+    margin: 0;
+}
+
+table.table td.leftmargin {
+    margin: 0;
+    padding: 0;
+    padding-left: 6px;
+}
+
+table.table td.rightmargin {
+    margin: 0;
+    padding: 0;
+    padding-right: 6px;
+}
+
+table.table input.check {
+    left: 0;
+    top: 0;
+}
+
+table.noborder, table.noborder th, table.noborder td {
+    border: 0;
+}
+
+tr.rowclosed, div.rowclosed{
+    display: none;
+}
+
+table th.money, table td.money {
+    text-align: right;
+}
+
+table.table th.checkbox, table.table td.checkbox {
+    text-align: center;
+}
+
+.table > thead > tr > th {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #ddd !important;
+}
+
+.properties-li {
+    color: #888;
+}
+.properties-li.properties-li-header {
+    font-weight: bold;
+}
+
+.table .icon16, .table .icon20 {
+    margin-right: 3px;
+}
+
+.icon-warning {
+    background-image: url("../icons/warning.gif");
+}
+
+.eventPic {
+ width: 105px;
+}
+    .eventPic img {
+        height: auto !important;
+    }
+/********************************************************************** forms */
+
+button, input, select, textarea {
+    width: 100%;
+}
+
+input[type=checkbox] {
+    width: auto;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select
+{
+    padding: 8px 4px;
+}
+
+input.autobtn {
+    margin: 2ex 1ex 2ex 0;
+    width: auto;
+}
+
+
+input.listbtn {
+    margin: 0;
+    width: auto;
+}
+
+input.addbtn {
+    margin: 0;
+    width: auto;
+}
+
+.btn-login {
+    width : 100% !important;
+}
+
+.btn-primary:disabled, .btn-primary:disabled:hover {
+    background-color: #B6C9DA;
+}
+
+.btn-iconlogin {
+    padding : 10px 50px;
+    background-size: contain;
+}
+
+div.selectAutoWidth select {
+    width: auto;
+}
+
+input.check, input.radio, span.radio input, div.radio input {
+    width: auto;
+}
+
+input.noleftmargin {
+    margin-left: 0;
+}
+
+input.inlinesmall {
+    width: 6ex;
+}
+
+select.inline {
+    width: 16ex;
+}
+
+input.inline {
+    width: 24ex;
+    margin-right: 4px;
+}
+
+div.outerinputcontainer {
+    width: auto;
+}
+
+div.innerinputcontainer {
+    width: 100%;
+}
+
+input.withPopTip, textarea.withPopTip, select.withPopTip {
+    width: 90%;
+    width: calc(100% - 26px);
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+
+margin-left: 2px; 
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #656565;
+}
+
+    label.inline, span.radio label, div.radio label {
+        display: inline;
+        width: auto;
+        white-space: normal;
+        font-weight: normal;
+        margin-left: 5px;
+    }
+
+    div.form {
+    margin-bottom: 1em;
+    padding: 2ex 3ex;
+}
+
+table.form {
+    margin-bottom: 1em;
+    table-layout: fixed;
+}
+
+    table.form td, table.form th {
+        padding: 6px 12px 12px 12px;
+        width: 50%;
+        border: none;
+    }
+
+    table.form th {
+        padding-bottom: 0;
+    }
+
+    table.form td.foot input.btn {
+        margin: 0 6px 0 0;
+    }
+
+    table.form td.wrap {
+        padding: 0;
+    }
+
+        table.form td.wrap table.form {
+            border: none;
+        }
+
+            table.form td.wrap table.form td {
+                padding: 0 12px;
+                width: 50%;
+            }
+
+    table.form div.form {
+        padding: 0 12px;
+        border: none;
+    }
+
+    table.form table.datetime {
+        margin: 0;
+    }
+
+    table.form table.list tr {
+        background: #fafafa;
+    }
+
+        table.form table.list tr.alt {
+            background: transparent;
+        }
+
+    table.form table.list td, table.form table.list th {
+        padding: 3px 6px;
+    }
+    
+    div.form div.container
+    {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    div.form div.l {
+        float: left;
+        width: 46%;
+    }
+
+    div.form div.ls {
+        float: left;
+        width: 19%;
+    }
+
+    div.form div.r {
+        float: right;
+        width: 46%;
+    }
+
+    div.form div.rb {
+        float: right;
+        width: 79%;
+    }
+
+    div.form div.form {
+        padding: 0 0 0 0;
+        border: none;
+    }
+
+div.error, span.error {
+    display: block;
+    background: transparent url(../icons/error.png) no-repeat 0 50%;
+    padding-left: 17px;
+}
+
+div.warning {
+    font-weight: Normal;
+    font-size: 1.1em;
+    color: #d00;
+    display: block;
+    background: transparent url(../icons/warning.gif) no-repeat 0 50%;
+    padding-left: 17px;
+    margin: 0 0 1em 0;
+}
+
+p.warning {
+    font-weight: Normal;
+    color: #d00;
+    display: block;
+    background: transparent url(../icons/warning.gif) no-repeat 0 50%;
+    padding-left: 17px;
+    margin: 0 0 1em 0;
+}
+
+
+.ActionTd {
+    width: 100px;
+    height: 42px;
+}
+.ActionTdTall {
+
+    height: 62px;
+}
+.inBasketText {
+    color: #308324;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 1px;
+    padding: 6px 1px;
+}
+
+.eventInBasketText {
+    padding: 0 8px 0 0;
+    margin-top: -5px;
+    margin-left: -18em;
+}
+
+.currentInBasketText {
+    color: #308324;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 5px;
+    padding: 8px 6px;
+    border: 1px solid #a6cca6;
+    background-color: #F0FFF0;
+    position: absolute;
+    top: 48px;
+    right:6px;
+    z-index: 1000;
+}
+
+.currentInBasketText:after, .currentInBasketText:before {
+	bottom: 100%;
+	right: 15px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.currentInBasketText:after {
+	border-color: rgba(244, 244, 244, 0);
+	border-bottom-color: #F0FFF0;
+	border-width: 10px;
+	margin-left: -20px;
+}
+.currentInBasketText:before {
+	border-color: rgba(204, 204, 204, 0);
+	border-bottom-color: #a6cca6;
+	border-width: 12px;
+	margin-left: -32px;
+    right:13px;
+}
+
+    .currentInBasketText a {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .currentInBasketText .btn-sm {
+        padding: 4px 35px 6px 10px;
+        line-height: 1.2;
+    }
+    .currentInBasketText .btn {
+        background-color: #eee;
+        color:#333;
+        border: 1px solid #ccc;
+        margin-top:10px;
+        background-image: url("../Icons/shoppingcartdark.png");
+        background-repeat: no-repeat;
+        background-position: 95% 55%;
+        padding: 4px 35px 6px 10px;
+        line-height: 1.2;
+    }
+
+table.auto {
+    background: rgba(230,230,230,0.5);
+    border: 1px solid #999;
+    margin-bottom: 1em;
+}
+
+    table.auto td, table.auto th {
+        padding: 1ex 2ex 2ex 2ex;
+    }
+
+div.normalInputSelectWidth input, div.normalInputSelectWidth select {
+    width: auto;
+}
+
+div input.narrow {
+    width: 4em;
+}
+
+
+.buttons {
+    margin-top: 20px;
+}
+    .buttons input {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+/*************************************************** Unread messages ***/
+tr.unread td {
+    font-weight: bold;
+}
+
+tr.unread a {
+    font-weight: bold;
+}
+
+/******************************************************************Dialog popups********/
+
+.dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4000;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dialog-content {
+    margin: 100px auto 30px auto;
+    padding: 15px;
+    border-radius: 1px;
+    background-color: #FAFAFA;
+    border: 1px solid #ccc;
+}
+
+.dialog .dialog-content > h1, .dialog .dialog-content > h2, .dialog .dialog-content > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.dialog-content .footer {
+    margin-top: 15px;
+    padding: 15px 0 0 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.dialog-content .footer input {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.dialog-close {
+    position: absolute;
+    margin: 0;
+    right: 3px;
+    top: 3px;
+    height: 24px;
+    width: 24px;
+    background-image: url(../icons/delete.gif);
+    z-index: 500;
+}
+.dialog-close-no-icon {
+    background: none !important;
+}
+
+.dialog-content .buttons {
+    text-align: right;
+    margin-top: 2ex;
+}
+
+.dialog-content .buttons input {
+        margin: 0 0 0 1ex;
+    }
+
+.dialog-text {
+    text-align: left;
+    font-weight: normal;
+}
+
+.instruction-info {
+    padding-left: 20px;
+    background: url('../icons/info.png') no-repeat; 
+}
+
+
+.popup-help > a img {
+    vertical-align: -3px;
+}
+
+
+/*******/
+.addAdHocCharge {
+    float: left;
+    margin-bottom: 1.5em;
+    margin-left: 0.6em;
+    padding-top: -6em;
+}
+
+/*****/
+
+.category-list {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 2px 0 0 5px;
+}
+
+    .category-list li {
+        padding: 4px 0 1px 11px;
+    }
+
+        .category-list li.parent {
+            background: url(../Icons/small_left_arrow.png) no-repeat left center;
+        }
+
+    .category-list li.selected span {
+        font-weight: bold;
+    }
+
+/********/
+.verticalSeparator {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #808080;
+    padding-right: 20px;
+}
+
+.loginOptions {
+    padding-top: 20px;
+}
+
+.loginOptionButton {
+    padding-left: 50px;
+    padding-right: 50px
+}
+
+.loginDiv {
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px 25px;
+    max-width: 500px;
+}
+    .loginDiv .title {
+        margin-bottom: 15px;
+    }
+    .loginDiv h1 {
+        font-weight: 600;
+    }
+    .loginDiv label {
+        text-align: left;
+        }
+    .loginDiv hr {
+        border-top: 1px solid #ccc
+    }
+    .loginDiv .lineThru:before {
+        background-color: #fafafa;
+    }
+
+.signinOptions {
+    padding-top: 20px;
+}
+
+/********************************/
+.form-cl span, .form-cl label {
+    margin-top: 1ex;
+    display: block;
+}
+
+.form-cl.strong span, .form-cl.strong label {
+    font-weight: bold;
+}
+
+.form-cl .display-value {
+    padding: 2px 0;
+}
+
+.form-l {
+    position: relative;
+}
+
+    .form-cl input[type=submit] {
+        width: auto;
+    }
+
+    .form-cl .buttons {
+        margin-top: 2ex;
+        text-align: right;
+    }
+
+.table .user-status {
+    color: red;
+    font-size: 10px;
+}
+
+
+/******************************** Search tabs in role assign */
+.searchTabs {
+    display: table;
+    border-spacing: 4px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0 5px 0;
+    width: 100%;
+}
+
+    .searchTabs ul {
+        display: table-row;
+        margin: 0;
+        border-bottom: 1px solid #ddd
+    }
+
+    .searchTabs li {
+        display: table-cell;
+        padding: 2px 0 2px 0;
+        vertical-align: bottom;
+        border: 1px solid #ddd;
+        background-color: #dbdee0;
+    }
+
+        .searchTabs li div {
+            padding: 2px 0.5em 0 0.5em;
+        }
+
+        .searchTabs li a {
+            color: rgb(113, 112, 112);
+        }
+
+        .searchTabs li.selected  {
+            background-color: #f8f8f8;
+            color: black;
+            border-bottom: 0
+            
+        }
+        .searchTabs li.selected a {
+            color: Black;
+        }
+
+        .searchTabs li.selected div {
+            position: relative;
+            top: 1px;
+        }
+
+.searchContent {
+    padding: 6px 6px 0 6px;
+    margin: 0;
+}
+    .searchContent label {
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        font-weight: normal;
+        margin-top: 20px;
+        color: #337ab7
+    }
+
+    .searchContent input[type="checkbox"] + label, .searchContent input[type="radio"] + label {
+        border: none !important;
+        color: #337ab7;
+    }
+
+.searchContentBtn {
+    margin-top: 1.5em !important;
+}
+
+.searchContent.withBorder {
+    position: relative;
+    margin: -7px -7px 18px -7px;
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+    .searchContent.withBorder::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -1px;
+        right: -1px;
+        bottom: -13px;
+        height: 12px;
+        background-color: #fcfcfc;
+        border-bottom: 1px solid #ccc;
+    }
+
+/*********************************************************** Compact fieldset */
+
+fieldset.compact {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+    fieldset.compact label {
+        margin-top: 0;
+    }
+
+span.urlLinkWrapping {
+    display: inline-block;
+    word-wrap: break-word;
+    width: 25ex;
+    overflow: hidden;
+}
+
+
+a.show-more, a.show-less {
+    position: relative;
+}
+
+a.show-more:after {
+    content: "";
+    display: block;
+    border-color: #0244dd transparent;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    margin-top: -1px;
+}
+
+a.show-less:after {
+    content: "";
+    display: block;
+    border-color: #0244dd transparent;
+    border-style: solid;
+    border-width: 0 4px 4px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    margin-top: -1px;
+}
+
+
+/************************************************************* search fieldset*/
+
+.bookingsearch fieldset {
+    border: none;
+    padding: 5px;
+}
+
+.bookingsearch legend {
+    margin-bottom: 5px;
+    width: 100%;
+    border-bottom: solid 1px #ccc;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.bookingsearch legend a {
+    cursor: pointer;
+}
+
+/*.bookingsearch fieldset.advancedClosed {
+    border: 0;
+    border-top: solid 1px #c9c9c9;
+    border-radius: 0;
+    margin-bottom: 0
+
+}*/
+
+
+/********************************************************* Widths */
+
+.autoWidth {
+    width: auto;
+}
+
+.width10pc {
+    width: 10%;
+}
+
+.width15pc {
+    width: 15%;
+}
+
+.width20pc {
+    width: 20%;
+}
+
+.width30pc {
+    width: 30%;
+}
+
+.width40pc {
+    width: 40%;
+}
+
+.width60pc {
+    width: 60%;
+}
+
+.width70pc {
+    width: 70%;
+}
+
+
+/********************************************************* KeyValuePair  */
+
+.keyValuePairTop {
+    padding-top: 0.3em;
+}
+
+.keyValuePairBottom {
+    padding-bottom: 0.3em;
+}
+
+table.keyValuePairPerRow td, th {
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    border: none;
+}
+
+/********************************************************* messages */
+
+.message 
+{
+    background: no-repeat scroll 15px 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-weight: normal;
+    margin-bottom: 1em;
+    margin-top: 0.6em;
+    padding: 20px 20px 20px 75px;
+}
+.message-compact {
+    background: no-repeat scroll 5px 5px;
+    padding: 5px 5px 5px 30px;
+}
+.message-text 
+{
+    white-space: pre-wrap;
+}
+
+p.message-text
+{
+    margin: 0;
+}
+
+.message-list, .message ul
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.message li {
+    margin-bottom: 0.50em;
+}
+
+.message li:last-of-type {
+    margin-bottom: 0;
+}
+
+.message-title {
+    font-weight: bold;
+}
+
+.message-info 
+{
+    background-color: #B9DCFF;
+    background-image: url('../Icons/InfoIcon.png');
+    border-color: rgb(153, 204, 255);
+}
+
+.message-warning 
+{
+    background-color: #FFF2cc;
+    background-image: url('../Icons/WarningIcon.png');
+    border-color: rgb(220, 200, 0);
+}
+
+.message-error 
+{ 
+    background-color: #FFEBEB;
+    background-image: url('../Icons/ErrorIcon.png');
+    border-color: rgb(164, 8, 8);
+}
+
+.message-error h3 
+{
+    color: rgb(220, 3, 3) !important;
+}
+
+.message-success 
+{
+    background-color: #CCFFCC;
+    background-image: url('../Icons/SavedIcon.png');
+    border-color: green;
+}
+
+.message h3 {
+    margin: 0 0 10px 0 !important;
+}
+
+.message-compact .message-list {
+    list-style: none;
+    padding: 0;
+}
+.message-compact.message-warning {
+    background-image: url('../icons/warning.png');
+}
+
+/********** authentication provider images **/
+.AuthImage80 {
+    width: 80px;
+    height: 80px;
+}
+
+.AuthImage40 {
+    width: 40px;
+    height: 40px;
+}
+
+.AuthImage25 {
+    width: 25px;
+    height: 25px;
+	max-width: 25px;
+}
+
+.AuthImage30 {
+    width: 30px;
+    height: 30px;
+}
+
+
+/**************************User Search in wizard*********/
+
+.UserSearchList {
+    border: 1px solid #C0C0C0;
+    list-style: none;
+    height: 20em;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding-left: 0;
+}
+
+.UserSearchItem {
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #CCCCCC;
+    padding: 3px;
+    background-color: #F7F7F7;
+    color: #666666;
+    min-height: 4em;
+    word-wrap: break-word;
+    font-size: 0.9em;
+}
+
+.CurrentUserSearchItem {
+    border-width: 1px !important
+}
+
+.UserSearchItem .AuthImage25 {
+    float: right;
+}
+
+.UserSearchItem .UserStatus {
+    color: red;
+    font-size: 10px;
+    float: right;
+    clear: right;
+}
+
+.UserSearchItem p {
+    margin: 0 !important;
+}
+
+.UserSearchLinks {
+    clear: both;
+    color: #0244DD;
+    overflow: hidden;
+}
+
+.UserSearchLinks a[id$=selectUserLink] {
+    float: right;
+}
+
+
+.findUserSearchDiv input[type=text] {
+    width: 77%;
+
+}
+.findUserSearchDiv input[type=submit] {
+    min-width: 5ex;
+    display: inline;
+}
+
+.providerLookup input[type=text] {
+    margin:0;
+    width: 75%;
+}
+
+.providerLookup input[type=submit] {
+    min-width: 5ex;
+    display: inline;
+    margin:0;
+}
+
+/******************************************************     deferDetails       */
+
+.sideContent {
+    margin-left: 0.5em;
+}
+
+.invoiceProviders {
+    padding-left: 0.5em;
+    overflow: hidden;
+}
+
+.payBtn {
+    width: 24ex;
+}
+
+
+.invHeader {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.subRadioCont {
+    padding-left: 0.5em;
+    padding-right: 0.1em;
+    margin: 0.8em 0.1em;
+    overflow: hidden;
+    display: block;
+}
+
+.sideSubRadioButton input {
+    width: auto;
+}
+
+.invContent {
+    margin-left: 1.5em;
+    margin-right: 0.3em;
+}
+
+.sideSubRadioButton label {
+    display: inline;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+.sideSubSubRadioButton {
+    word-break: break-all;
+}
+
+.sideSubSubRadioButton input {
+        width: auto;
+}
+
+.sideSubSubRadioButton label {
+        word-break: break-all;
+        display: inline;
+        font-weight: normal;
+        padding-left: 5px;
+}
+
+.wordwrap {
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera <7 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word;
+}
+
+.sideField {
+    overflow: hidden;
+}
+
+/***************************** Lock check-box *********/
+.lockbox input {
+    position: absolute;
+    left: -9999px;
+}
+
+.lockbox label {
+    background: url(../icons/unlock.gif) no-repeat 0 0;
+    display: inline-block !important;
+    margin: 0;
+    padding: 0;
+    width: 16px !important;
+    height: 16px;
+    cursor: pointer;
+    background-size: 16px;
+}
+
+.lockbox.locked label {
+    background-image: url(../icons/lock.gif);
+}
+
+.lockbox[disabled] label {
+    background-image: url(../icons/unlock-disabled.gif);
+}
+
+.lockbox.locked[disabled] label {
+    background-image: url(../icons/lock-disabled.gif);
+}
+/************************************************************/
+
+.c2form-control span, .c2form-control label {
+    margin-top: 1ex;
+    display: block;
+}
+.c2form-control.strong span, .c2form-control.strong label {
+    font-weight: bold;
+}
+.c2form-control .display-value {
+    padding: 2px 0;
+}
+.c2form-control {
+    position: relative;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.c2form-control input[type=submit] {
+    width: auto;
+}
+.c2form-control .buttons {
+    margin-top: 2ex;
+    text-align: right;
+}
+
+.list .user-status {
+    color: red;
+    font-size: 10px;
+}
+
+
+.sideHelpText 
+{
+    display: table-cell; 
+    vertical-align: middle; 
+    white-space: pre-line;
+    padding-bottom: 1.2em;
+}
+
+.cost-table {
+    width: auto;
+
+}
+.cost-table th, .cost-table td {
+    padding-left: 25px;
+}
+.cost-table th:first-child, .cost-table td:first-child {
+    padding-left: 0;
+}
+
+.suggestions {
+    border-width: 1px;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 6px;
+    background-color: #FFEBEB;
+    color: red;
+}
+
+    .suggestions h3 {
+        color: red !important;
+        font-weight: bold;
+    }
+
+.suggestions ul {
+    padding: 0;
+    margin: 0 0 0.4em 0;
+    list-style: none;
+}
+
+td .colour {
+    width: 28px;
+    height: 18px;
+    border: 1px solid #ccc
+}
+
+.download-main
+{
+    height: 400px;
+}
+
+.downloadPanel 
+{
+    padding-top: 1em;
+}
+
+/********************************************************wizard list*/
+.wizdiv {
+
+    padding: 1em;
+    padding-top: 0.5em;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    /*margin: 3px;*/
+    min-height: 390px;
+    -webkit-transition: background 1s;
+    margin: 0 -1px -1px 0;
+}
+
+    .wizdiv img {
+        opacity: 1;
+        height: 220px;
+        width: 100%;
+        -webkit-transition: opacity 1s;
+    }
+
+    .wizdiv:hover {
+        background-color: #f3f3f3;
+        -webkit-transition: background 1s;
+    }
+    .wizdiv:hover img{
+        opacity: 0.8;
+        -webkit-transition: opacity 1s;
+    }
+
+    .wizdiv h2 {
+        min-height: 80px;
+        padding-top: 10px;
+    }
+
+    /*******************************************************payment control*/
+
+.paymentChoice {
+    min-height: 6em;
+    border: solid 1px #ededed;
+    background: #f5f5f5;
+    margin-bottom: 0.8em;
+    margin-right: 2%;
+    padding: 1em;
+    width: 28%;
+    float: left
+}
+.paymentStep {
+    padding: 0.5em;
+}
+.paymentDelayChoice {
+    margin-bottom: 0.8em;
+    margin-right: 2%;
+    padding: 1em;
+    width: 90%;
+    float: left
+
+}
+
+
+.price-table {
+    margin: 2em 0 2em 0 !important;
+    width: 25em;
+}
+.price-table th label {
+    margin: 0;
+}
+.price-table tr {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+.price-table th.title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #555;
+}
+.price-table td {
+    font-weight: bold;
+    color: #555;
+}
+.price-table td {
+    padding: 9px !important;
+}
+.price-table th {
+    padding: 7px !important;
+}
+.price-table .per-unit {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/*Todo sort output and set to input button group*/
+.userlookupicon {
+  position: absolute;
+  right: 1px;
+  top: 0;
+  height: 2.6em;
+  width: 14%;
+  background: #e9e9e9;
+  border: solid 1px #c7c7c7;
+  padding: 1px 2px;
+  border-radius: 0 5px 5px 0;
+}
+    .userlookupicon input {
+        width:22px;
+        height: 22px !important;
+        margin-top: 3px !important;
+    }
+.userlookupfield input {
+    margin:0;
+        height:2.6em
+}
+
+.userlookupfield {
+    padding-right: 23px;
+    vertical-align: bottom;
+    position: relative;
+
+}
+
+.recur label {
+    font-weight: normal;
+}
+
+.recur input[type=radio] {
+    display : inline;
+}
+.recurrence-result .status {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.recurrence-result .approved .status {
+    background-image: url('../icons/approve.gif');
+}
+.recurrence-result .warning .status {
+    background-image: url('../icons/warning.gif');
+}
+.recurrence-result .approved.remove .status {
+    background-image: url('../icons/approve-disabled.gif');
+}
+.recurrence-result .warning.remove .status {
+    background-image: url('../icons/warning-disabled.gif');
+}
+.recurrence-result .remove .date {
+    color: #808080;
+    text-decoration: line-through;
+}
+
+.searchContent .RadioButtonSelection {
+    margin-top: 0;
+}
+.resource-search .RadioButtonSelection {
+    min-width: 80%;
+}
+
+.expanderIcon {
+    padding-left:5px;
+    padding-bottom: 3px
+}
+
+.subTask
+{
+    color: #919191;
+    font-weight: normal;
+    text-indent: 20px;
+}
+
+.container > .form-group {
+    float: left;
+    width: 50%;
+    clear: left;
+    padding-right: 5%;
+    min-height: 4.25em;
+}
+.container > .form-group:nth-of-type(2n) {
+    clear: right;
+    padding-left: 5%;
+    padding-right: 0;
+}
+
+.container.form-vertical .form-group {
+    float: none;
+    clear: none;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1.2ex;
+    min-height: 0;
+    max-width: 26em;
+}
+
+.container.form-vertical .form-group:nth-of-type(2n) {
+    clear: none;
+    padding: 0;
+}
+
+.nlp {
+    padding-left: 0 !important;
+}
+.nrp {
+    padding-right: 0 !important;
+}
+
+/*************************seat progress bar*************/
+.SeatProgress {
+    width: 94%;
+    height: 1.5em;
+    background-color: #555;
+    border-radius: 3px;
+    position: relative;
+    padding: 1px;
+    margin-top: 5px;
+}
+    .SeatProgress > span {
+        background-color: #19dd19;
+        display: block;
+        height: 100%;
+        box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+        position: relative;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+.SeatProgressCancelled {
+    background-color: #dd3919 !important;
+}
+
+/*****************************event status control********/
+
+.greenstatus {
+    padding-left: 45px;
+    background: url('../icons/SavedIcon.png') no-repeat left top;
+    color: #1ec201;
+}
+.yellowstatus {
+    padding-left: 45px;
+    background: url('../icons/WarningIcon.png') no-repeat left top;
+    color: #fd8e1b;
+}
+.redstatus {
+    padding-left: 45px;
+    background: url('../icons/ErrorIcon.png') no-repeat left top;
+    color: #e00101;
+}
+
+.stateDiv {
+    min-height: 45px;
+    margin-bottom: 5px;
+}
+
+/****************************************************** wizard resource pager */
+
+.wizard-resource-pager {
+    float: left;
+    width: 62%;
+}
+.wizard-resource-pager-top .pagination-summary {
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+.wizard-resource-pager-bottom {
+    margin: 10px 0 0 0;
+}
+
+/******************************************************shopping cart and wizard buttons*/
+
+#menuHead .basket {
+    float:right;
+}
+
+.basket {
+    position: relative;
+    overflow: visible !important;
+    width:50%;
+    float:left;
+    margin-right: -1px;
+}
+
+    .basket .title {
+        background-position: 3px center;
+        font-size: 16px;
+        padding: 8px 12px 7px 29px;
+        background-image: url(../icons/shoppingcartdark.png);
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        height: 40px;
+    }
+
+    .basket .title a {
+        padding: 2px;
+    }
+
+div.basketContentScroll {
+    overflow-y: auto;
+    max-height: 500px; 
+}
+
+.detailsnavbuttons .basketContent {
+        right: 0 !important;
+    }
+
+.detailsnavbuttons div.basketContent::before, .detailsnavbuttons div.basketContent::after {
+        right: 33px !important;
+    }
+
+div.basketContent {
+    color : #333;
+    position: absolute;
+    right: -190px;
+    width: 475px;
+    background-color: #fff; 
+    border-top: 0;
+    margin-top: -1px;
+    z-index: 1979;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+    div.basketContent::before {
+        content: "";
+        position: absolute;
+        width: 188px;
+        height: 1px;
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        right: 190px;
+        top: -1px;
+        border-top-color: #fff;
+    }
+    
+    div.basketContent table {
+        font-size: 1em !important;
+        margin: 0;
+    }
+        div.basketContent table td {
+            padding: 14px 8px;
+            background-color: white;
+            vertical-align: middle;
+        }
+
+        div.basketContent table tr {
+            border: 1px solid #ccc;
+        }
+
+        div.basketContent table td {
+            border-bottom: 1px solid #ccc;
+        }
+
+        div.basketContent table th {
+            background-color: white;
+            vertical-align: middle;
+        }
+
+      div.basketContent .icon-button {
+        padding: 0 0 0.2em 1.5em;
+        border: 0;
+        background-color: transparent;
+        color: rgb(113, 113, 113);
+        cursor: pointer;
+        font-size: 0.8em;
+        width: auto;
+    }
+
+    div.basketContent .icon-button[disabled=disabled] {
+        color: #e8e8e8;
+    }
+
+    div.basketContent td input {
+        margin: 0;
+        vertical-align: middle;
+        min-width: 0;
+    }
+    div.basketContent .qtyfield {
+        width: 3em;
+        padding: 4px;
+        margin-right: 5px;
+        text-align: center;
+    }
+
+.wizardbannerright .navbuttons {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-top: 10px;
+    padding: 12px 10px;
+    height: 60px;
+}
+
+.basketnavbuttons {
+        margin-top: 0;
+        width:380px;
+    }
+
+.sidepanel .navbuttons {
+    overflow: hidden;
+    padding: 12px 4px 4px 4px;
+    margin-top: 10px;
+}
+    .sidepanel .navbuttons:first-child {
+        margin-top: 0;
+        padding-top: 4px;
+    }
+
+.btn-back {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    background-image: url("../Icons/chevron-left_ffffff_16.png");
+    background-repeat: no-repeat;
+    background-position: 5% 55%;
+}
+
+.multinavbuttons .btn-back {
+    padding: 1px;
+    border: none;
+    background: none;
+    color: #337ab7;
+    font-size: 1em;
+    text-align: left;
+    display: block;
+    vertical-align: bottom;
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.btn-proceed {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    background-image: url("../Icons/chevron-right_ffffff_16.png");
+    background-repeat: no-repeat;
+    background-position: 95% 55%;
+}
+
+    .btn-proceed:disabled, .btn-proceed:hover:disabled {
+        background-color: #eee;
+        border: 1px solid #ccc;
+        color: #999;
+    }
+.navbuttons .btn-back {
+    width: 40%;
+    margin: 0;
+}
+.navbuttons .btn-proceed, .basketnavbuttons .btn-proceed {
+    float: right;
+    width: 48%;
+    margin: 0;
+}
+
+.basketnavbuttons .btn-proceed {
+    float:left;
+    border-radius: 0 3px 3px 0;
+    width: 50%;
+}
+
+/*** Help ******/
+
+.help-item {
+    background: url("../Icons/help.png") no-repeat;
+    display: inline-block;
+    font-weight: normal;
+    height: 14px;
+    margin-left: 3px;
+    width: 14px;
+}
+
+/************************************************photoviewer********/
+.photoViewer {
+    border: 1px solid #cccccc;
+    width: 375px;
+    overflow: hidden;
+}
+
+img.photoViewerMainImage {
+    height: 375px;
+    width: 375px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -1px
+}
+
+.photoViewerThumbs div {
+    width : 74px;
+    height: 75px;
+    float: left;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+    .photoViewerThumbs div:nth-child(5) {
+        border: none;
+        width: 77px;
+    }
+    .photoViewerThumbs div:nth-child(5) img{
+        width: 77px;
+    }
+    .photoViewerThumbs img.selectedThumb {
+        opacity: 0.8;
+        filter: alpha(opacity=80); /* For IE8 and earlier */
+
+    }
+
+img.photoViewerThumb {
+    height: 75px;
+    width: 75px;
+
+}
+
+/*************** basic 12 column grid system *************/
+
+.col-row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.col-12 {
+    width: 100%;
+}
+.col-11 {
+    width: 91.6667%;
+}
+.col-10 {
+    width: 83.33333333%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-8 {
+    width: 66.6667%;
+}
+.col-7 {
+    width: 58.33333333%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.6667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: 16.6667%;
+}
+.col-1 {
+    width: 8.33333333%;
+}
+/****************************************************************************Wizard banner layout*/
+.wizardbanner {
+    display: table;
+    width: 100%;
+}
+.wizardbannerleft {
+    display: table-cell;
+    width: 65%;
+    vertical-align: bottom;
+}
+.wizardbannerright {
+    display: table-cell;
+    width: 25%;
+    vertical-align: bottom;
+}
+
+/********************************************************************************Seats page*/
+.existingAttendee {
+    margin: 0; 
+    margin-left: 15px; 
+    margin-bottom: -1px;
+    border: solid 1px #ccc;
+    padding: 1em;
+}
+
+/******************************************************************************** Wizard Resource details page*/
+
+.resource-details.form {
+    padding: 4ex;
+    font-size: 14px;
+}
+.resource-details.form h1 {
+    margin: 0 0 0.3em 0;
+    font-size: 2.0em;
+    color: #337ab7;
+}
+.resource-details .resource-site {
+    background: url('../icons/location.png') no-repeat 1px 50%; 
+    padding-left: 18px;
+    margin: 1.4em 0 0 0;
+}
+.resource-details .resource-qty {
+    background: url('../icons/qty.png') no-repeat 0 50%; 
+    padding-left: 18px;
+    margin: 0.4em 0 0 0;
+}
+.resource-details .resource-photos {
+    float: left;
+    width: 375px;
+}
+.resource-details .resource-info {
+    margin-left: 395px;
+}
+.resource-details .resource-add {
+    margin: 0;
+    float: right;
+    text-align: right;
+}
+
+.resource-details .resource-add input.btn {
+    margin: 0;
+}
+.resource-details .resource-info h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 1.8em 0 0.6em 0;
+}
+.resource-details .resource-sections h3 {
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 2em 0 0.6em 0;
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid #CCC;
+}
+.resource-details .resource-prices tr:first-child {
+    display: none;
+}
+.resource-details .resource-prices tr td:first-child {
+    width: 23%;
+}
+.resource-properties th {
+    width: 23%;
+    font-weight: normal;
+}
+
+.related-resources-carousel { 
+    border: none; overflow: visible; margin-left: 3em; margin-right: 3em; 
+}
+
+.related-resources-carousel .carousel-control.left {
+    margin-bottom: 20%; margin-top: 20%; margin-left: -3em; 
+}
+
+.related-resources-carousel .carousel-control.right { 
+    margin-bottom: 20%; margin-top: 20%; margin-right: -3em; 
+}
+
+.related-resources-carousel .img-responsive {   
+    height: 14em; border: 1px solid #CCC; 
+}
+
+.related-resources-carousel .inBasketText {
+    text-align: left;
+    width: 95%;
+}
+
+.related-resources-carousel .carousel-indicators { 
+    margin-bottom: -2em;
+}
+
+.related-resource-title {
+    height: 3em;
+}
+
+.resource-view-type-info {
+    margin: 1.5em 0;
+}
+
+/********************************************************************************Resource Listing*/
+
+.resource-list {
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1em;
+    margin: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+    .resource-list .resource-image {
+        display: table-cell;
+        vertical-align: top;
+        padding: 15px 15px 0 0;
+        width: 1px;
+    }
+
+    .resource-list .resource-image a {
+        display: block;
+    }
+
+    /*see media queries at top of file for list images css*/
+    .resource-list .resource {
+        display: table-row;
+    }
+    .resource-list .resource-name {
+        margin-bottom: 10px;
+    }
+    .resource-list .resource-site, .icon-resource-site {
+        background: url("../icons/location.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-type, .icon-resource-type {
+        background: url("../icons/type-grey.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-qty, .icon-resource-qty {
+        background: url("../icons/qty.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-price-pound {
+        background: url("../icons/pound.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-price-euro {
+        background: url("../icons/euro.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-price-dollar {
+        background: url("../icons/dollar.png") no-repeat 0 50%;
+    }
+    .resource-list .resource-icon {
+        padding-left: 16px;
+        color: #888;
+        margin: 7px 0;
+    }
+
+.resource-list .resource-information {
+    display: table-cell;
+    vertical-align: top;
+    padding: 15px 15px 0 0;
+}
+
+.resource-list .resource-name :first-child  {
+    font-size: 1.3em;
+}
+.resource-list .resource-desc  {
+    font-size: 1.1em;
+}
+.resource-list .resource-book {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 15px;
+    text-align: right;
+    padding-right: 10px;
+    width: 1px;
+    white-space: nowrap;
+    position: relative;
+}
+.resource-list .resource-book input {
+    margin: 0;
+}
+.resource-list .resource-noresults {
+    margin-top: 15px;
+    display: block;
+}
+.resource-list .resource-noresults .message-text {
+    font-size: 18px
+}
+.resource-list .resource-noresultsadvice h1 {
+    font-size: 16px;
+}
+.resource-list .resource-noresultsadvice {
+    margin-left: 25px
+}
+.resource-list .resource-noresultsadvice li {
+    margin-top: 3px;
+    list-style-type: disc;
+}
+
+    .resource-list .resource-compare {
+        position: absolute; 
+        right:0; 
+        text-align: right; 
+        padding:10px
+    }
+
+        .resource-list .resource-compare label {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+        .resource-list .resource-compare input {
+            vertical-align: text-bottom;
+        }
+
+.resource-list-cell {
+        min-width: 150px;
+        max-width: 480px;
+    }
+
+.resource-status-counts .icon20 {
+    margin-right: 0;
+}
+.resource-status-counts .icon-resource-status-InService {
+    margin-right: -1px;
+}
+
+
+/********************************************************************************Related Resource Listing*/
+.relatedContainer {
+    clear: both;
+    float: left;
+    margin: 20px 0 10px 9%;
+    background: #ededed;
+    padding: 10px 9px 10px 10px;
+    color: #555;
+    border: 1px solid #bbb;
+    position: relative;
+    width: 91%;
+}
+
+.relatedContainer:after, .relatedContainer:before {
+	bottom: 100%;
+	left: 45px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.relatedContainer:after {
+	border-color: rgba(244, 244, 244, 0);
+	border-bottom-color: #ededed;
+	border-width: 15px;
+	margin-left: -30px;
+}
+.relatedContainer:before {
+	border-color: rgba(204, 204, 204, 0);
+	border-bottom-color: #bbb;
+	border-width: 16px;
+	margin-left: -31px;
+}
+
+.relatedResource-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+    .relatedResource-list .relatedResource-image {
+        float: left;
+        margin-right: 15px;
+        border: 1px solid #CCC;
+    }
+    .relatedResource-list .relatedResource-image img {
+        padding: 0;
+        margin: 0;
+        width: 80px;
+        height: 80px;
+    }
+    .relatedResource-list .relatedResource {
+        overflow: hidden;
+        margin: 15px 0 0 0;
+
+    }
+    .relatedResource-list .relatedResource-name {
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+    
+.relatedResource-list .relatedResource-information {
+    overflow: hidden;
+}
+.relatedResource-list .relatedResource-detail {
+    float: left;
+    width: 80%;
+}
+.resource-list .relatedResource-desc  {
+    font-size: 0.8em;
+}
+.relatedResource-list .relatedResource-book {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+.relatedResource-list .relatedResource-book input {
+    margin: 0;
+}
+
+/****************************************Availability results**/
+.resource-availability {
+    
+    font-weight:normal;
+}
+
+.resource-availability-container
+{
+    position: relative;
+    padding: .4em;
+    padding-left :10px;
+    min-height: 7em;
+    width: 125%;
+    border: none;
+    border-left: 1px solid #ccc;
+}
+
+.resource-availability-busy {
+    height: 2em;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.resource-availability-bullet {
+    padding-left: 12px;
+    background: url('../icons/out.png') center left no-repeat; 
+    background-size: 8px;
+}
+
+.resource-availability-twocol
+{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.resource-availability-label {
+    color: #10be60;
+    margin-top: 0;
+    background: url('../images/datepicker.gif') center left no-repeat;
+    padding-left: 20px; 
+    font-weight: normal
+}
+
+.resource-availability-label-limited {
+    color: #bc8a37;
+}
+
+.resource-availability-label-unavailable {
+    color: #a02c2c;
+}
+
+.resource-availability-details
+{
+    margin-top: 0.1em;
+    font-size: 12px;
+    color: #888;
+}
+
+.resource-availability-details-range div {
+    padding-left: 18px; 
+}
+.resource-availability-details-range div:nth-child(2) {
+    background: url('../icons/out.png') center left no-repeat; 
+    font-weight: bold;
+}
+.resource-availability-details-range div:nth-child(3) {
+    margin-bottom: 4px; 
+}
+.resource-availability-details-range div:nth-child(4) {
+    background: url('../icons/in.png') center left no-repeat; 
+    font-weight: bold;
+}
+
+.resource-list .resource-detail .l {
+    width: 48%;
+}
+/****************************************Availability search control**/
+
+.availability-setup {
+    padding-bottom: 6px;
+}
+.availability-setup p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.availability-setup label {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.availability-setup .controls label {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+    font-weight: normal;
+    border: none;
+    color: #656565;
+}
+.availability-setup label .required {
+    display: none;
+}
+.availability-setup input[type='submit'] {
+    padding: 8px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.availability-setup .RadioButtonSelection {
+    margin: 0 0 10px 0;
+}
+.availability-setup .controls > div {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-right: 5px;
+}
+.availability-setup .controls > div:last-child {
+    padding-right: 0;
+}
+.availability-setup .datefield {
+    max-width: 15ex;
+    width: 100%;
+}
+/****************************************Barcode search control**/
+.barcodeSearchBox {
+    float:right;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+.barcodeSearchBox input {
+    display: inline;
+    line-height: 1.4;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 13px;
+    vertical-align: top;
+    width: auto;
+}
+.barcodeSearchBox input[type='text'] {
+    min-width: 175px;
+}
+.barcodeSearchBox input[type='submit'] {
+    min-width: 0;
+}
+
+/********************************************Compare button control*/
+
+.compareButtonBox {
+    float:right;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+.compareButtonBox input {
+    display: inline;
+    line-height: 1.4;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 13px;
+    vertical-align: top;
+    width: auto;
+}
+
+/************************************** Search field  *****************/
+
+.search-field input {
+    display: block;
+    float: left;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+    .search-field .placeholder {
+        line-height: normal !important;
+    }
+
+    .search-field input[type='text'] {
+        width: 87%;
+        color: #337ab7;
+        border: solid 1px #ccc;
+        padding-left: 10px;
+    }
+
+    .search-field input[type='submit'] {
+        margin-left: -1px;
+        padding-right: 2px;
+        -moz-border-radius: 0 4px 4px 0;
+        -webkit-border-radius: 0 4px 4px 0;
+        border-radius: 0 4px 4px 0;
+        min-width: 12% !important;
+        background-position: 15px center;
+        border: 1px solid #ccc;
+    }
+
+
+/************************************  Bootstrap Carousel  ****/
+.carousel-indicators li { border-color: black; background-color: #FFF; }
+.carousel-indicators .active { border-color: #FFF; background-color: #555; }
+.carousel-indicators { bottom: 0; }
+.carousel-control.left, .carousel-control.right { color: #888; background: none !important; }
+.carousel-control { width: 7%; }
+    .carousel-control .glyphicon-chevron-left {
+        margin-left: -35px;
+    }
+    .carousel-control .glyphicon-chevron-right {
+        margin-right: -35px;
+    }
+    .wizard-carousel:hover .carousel-control.left, .wizard-carousel:hover .carousel-control.right {
+        color: #222222;
+    }
+        .wizard-carousel:hover .carousel-control.left .carousel-control-buffer, 
+        .wizard-carousel:hover .carousel-control.right .carousel-control-buffer {
+            background: rgba(255,255,255,0.8);  
+        }
+
+        .carousel-control.left .carousel-control-buffer, 
+        .carousel-control.right .carousel-control-buffer {
+            height: 45px;
+            width: 45px;
+            padding: 5px;          
+        }
+/************************************  Bootstrap Carousel Fade Styles  ****/
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+          transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/**********************************************Wizard Adverts*/
+
+.wizard-carousel {
+  height: 400px;
+  border: 1px solid #ccc;
+  overflow: hidden
+}
+
+    .wizard-carousel .item {
+        height: 400px;
+    }
+.wizard-carousel .carousel-caption,  .previewItem .carousel-caption{
+    text-align: left;
+    height: 380px;
+    left: 6% !important;
+    right: 6% !important;
+}
+
+    .wizard-carousel .carousel-caption h3, .previewItem .carousel-caption h3 {
+        color: white;
+        font-size: 1.8em;
+        font-weight: normal;
+        text-shadow: none;
+        margin: 2px 0 2px 0;
+        
+    }
+    .previewItem .carousel-caption h3 {
+        margin-top: 2px; 
+    }
+    .wizard-carousel .carousel-caption p, .previewItem .carousel-caption p {
+        margin: 0 0 5px 0;
+    }
+    .wizard-carousel .carousel-caption p, .wizard-carousel .carousel-caption li, .previewItem .carousel-caption p {
+        color: white;
+        font-size: 1.1em;
+        text-shadow: none;
+    }
+    
+    .wizard-carousel .carousel-caption-info, .previewItem .carousel-caption-info
+    {
+        background: rgb(6, 44, 72);
+        background: rgba(6, 44, 72, 0.81);
+        padding: 20px;
+        width: 75%;
+        position: relative;
+        min-height: 60%;
+    }
+    .wizard-carousel .carousel-caption-info-fixed {
+        max-height: 80%;
+        overflow: hidden
+    }
+
+    .wizard-carousel .btn-link, .previewItem .btn-link {
+        display: block;
+        text-align: right;
+        padding: 0;
+        color: white;
+    }
+    .carousel-caption-site {
+    background: url('../icons/location_white.png') no-repeat 0 50%; 
+    padding-left: 18px;
+}
+.wizardImageMini {
+    width:150px;
+    height: 150px;
+    padding: 1px;
+    float:left;
+    margin-right: 5px;
+}
+
+.WizardBackImage {
+    width: 100%;
+    position: absolute;
+    top: -50%;
+}
+
+.wizard-advert-icons {
+    margin-top: 1em;
+    bottom: 5%;
+}
+
+.wizard-advert-icons img {
+    margin-right: .5em;
+}
+
+.wizard-advert-sign-in {
+    position: absolute; 
+    bottom: 5%; 
+    right: 2%
+}
+
+.previewItem {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc
+}
+
+.carousel-title {
+    padding:5px 10px;
+    height: 33px;
+    width:100%;
+    border: 1px solid #ccc;
+    border-top: 0;
+    text-align: right;
+    font-size:14px;
+}
+
+.info-caption p{
+    color: #333 !important;
+}
+
+/*************************my account widget*/
+.myaccountWidget {
+    position: relative;
+    margin-bottom: 0 !important;
+    border-bottom: none !important
+}
+
+.myaccountWidget .actionButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    min-height: 0
+}
+.myaccountWidget .actionButton a {
+    margin: 0;
+    font-size: 14px;
+    color: #337ab7;
+}
+
+ .myaccountWidget .myLinks {
+    display: table;
+    width: 85%;
+}
+
+.myaccountWidget div[class^="myAcc"] {
+    display: table-cell;
+    padding: 10px 0;
+    font-size:  1em;
+    color: #333;
+    vertical-align: middle;
+}
+
+.myAccMessages {
+    background: url('../icons/mail_big.png') no-repeat left center;
+    padding-left: 40px !important;
+    font-weight: bold;
+}
+
+.myAccBookings {
+    background: url('../icons/book_big.png') no-repeat left center;
+    padding-left: 40px !important;
+    font-weight: bold;
+}
+.myAccAlerts {
+    background: url('../icons/alert_big.png') no-repeat left center;
+    padding-left: 45px !important;
+    font-weight: bold;
+}
+
+.myAccNoMessages {
+    background: url('../icons/mail_none_big.png') no-repeat left center;
+    padding-left: 40px !important;
+}
+
+.myAccNoBookings {
+    background: url('../icons/book_none_big.png') no-repeat left center;
+    padding-left: 45px !important;
+
+}
+.myAccNoAlerts {
+    background: url('../icons/alert_none_big.png') no-repeat left center;
+    padding-left: 45px !important;
+}
+
+.myAccCheckouts {
+    background: url('../icons/checkout_big.png') no-repeat left center;
+    padding-left: 30px !important;
+    font-weight: bold;
+}
+
+.myAccNoCheckouts {
+    background: url('../icons/checkout_none_big.png') no-repeat left center;
+    padding-left: 30px !important;
+}
+
+/*************************************wizard list page*/
+
+.wizard-list-item {
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    overflow: hidden;
+    position: relative;
+
+}
+    .wizard-list-item a {
+        color: #777;
+    }
+
+    .wizard-list-item:hover {
+        border: 1px solid #204c72;
+        box-shadow: #ccc 2px 2px 3px;
+    }
+
+        .wizard-list-item:hover h3 {
+            text-decoration: underline;
+        }
+
+    .wizard-list-item h3 {
+        margin: 12px !important;
+        margin-bottom: 8px !important;
+        padding-bottom: 2px;
+        color: #337ab7 !important;
+    }
+
+    .wizard-list-item h3 + p {
+        margin-top: -8px !important;
+    }
+
+.wizard-list-desc {
+    margin: 0 5px 5px 12px;
+}
+
+.wizard-list-image {
+    float: left;
+    height: 100%;
+    max-height: 180px;
+    width: 33%;
+}
+
+    .wizard-list-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+.wizard-list-details {
+    float: left;
+    width: 66%;
+}
+
+.wizard-list-sites {
+    background: url('../icons/location.png') no-repeat;
+    padding-left: 18px;
+    margin-left: 12px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
+
+.wizard-list-items {
+    background: url('../icons/type-grey.png') no-repeat; /*make better icon*/
+    margin-left: 12px;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+    min-height: 50px;
+}
+
+    .wizard-list-items ul {
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+    .wizard-list-column-l {
+        float: left;
+        width: 48%;
+    }
+
+    .wizard-list-column-r {
+        float: right;
+        width: 48%;
+    }
+
+.wizard-list-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+}
+    .wizard-list-btn a {
+        color: white;
+    }
+
+    .wizard-list-btn .btn-sm {
+        padding-left: 18px;
+        padding-right: 18px; 
+    }
+
+/**************************************Revert bootstrap*/
+
+/* Tooltips dont show on disabled buttons without pointer events */
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+    cursor: default;
+    pointer-events: auto;
+}
+
+/*********************** Booking History ***/
+.booking-history-items {
+    padding-left: 0;
+}
+.booking-history-items li {
+    list-style-type: none;
+}
+.booking-history-more-items {
+    color: #888;
+}
+
+
+/************************************HomePage */
+.home-row div[class*='col-'] {
+    display: table-cell;
+    float:none;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.home-row {
+    display: table;
+    table-layout: fixed;
+    width:100%;
+    border-spacing: 5px
+}
+    .home h2 {
+          font-size: 18px;
+          border-bottom: 2px solid rgb(16, 114, 190);
+          padding: 4px 5px;
+          margin-top: 0 !important;
+          font-weight: bold;
+    }
+    .home h3 {
+          margin-top: 0 !important;
+    }
+    .home ul {
+        padding-left: 18px;
+    }
+
+.home-section-content {
+    max-height: 325px;
+    overflow: hidden;
+}
+.home-follow-us {
+    margin-top: 20px;
+}
+
+/****** Terms & conditions page ******/
+.condition-accept {
+    margin-top: 5ex;
+    margin-bottom: 3ex;
+}
+.condition-accept label {
+    font-weight:bold;
+}
+
+/*****  Resource control  *****/
+
+.thumbnail-cell {
+    padding: 5px 8px !important;
+    width: 60px;
+}
+.thumbnail-cell img {
+    height: 60px;
+    top: 0 !important;
+    margin: 0 !important;
+}
+
+/*****   Notification *****/
+.reminder-time .minutesselector {
+    float: left;
+    margin-right: 1em;
+}
+.reminder-time-help {
+    padding-top: 10px;
+}
+
+/***********************************status panel*******/
+.statusTitle {
+    font-size: 16px;
+    font-weight: bold;
+}
+.statusTitle .icon20 {
+    margin-right: 2px;
+}
+.resource-statuses-filter .statusTitle {
+    font-size: 13px;
+    color: #337ab7;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.resource-statuses-filter, .resource-status-filter {
+    margin: 20px 0;
+}
+.resource-statuses-filter label, .resource-status-filter label {
+    margin-top: 0;
+}
+.resource-statuses-filter .CheckBoxList {
+    margin-top: 0;
+    padding-left: 22px;
+    margin-bottom: 10px;
+}
+.resource-statuses-filter .CheckBoxList input, .resource-status-filter .CheckBoxList input {
+    position: relative;
+    top: 2px;
+}
+
+.pager-sort {
+    float: right;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+.pager-sort select {
+    width: auto;
+    padding: 4px;
+}
+.pager-sort label {
+    display: inline;
+    width: auto;
+    margin: 0 3px 0 0;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    font-weight: normal;
+}
+
+.pager-with-sort {
+    float: left; 
+    width: 61%;
+}
+
+/*************************************admin resource details**********/
+.resourceDetails_Name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #337ab7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*********************************webcam control*******************/
+.webCamBox{
+    width: 240px;
+    height: 240px;
+    border: 1px solid #cccccc;
+}
+
+.webCamContainer {
+    padding:10px 0; 
+    height: 260px;
+    width: 99%
+}
+.webCamContainer .l {float: left}
+.webCamContainer .r {float: right}
+
+.dashboard-owner-photo .userphoto-edit-icon
+{
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+.user-edit-photo .userphoto-edit-icon
+{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+}
+.user-edit-photo
+{
+    position: relative
+}
+
+/************************/
+
+.banner > .message:first-child, .banner > span:first-child .message {
+    margin-top: 0;
+}
+
+.banner > .message:last-child, .banner > span:last-child .message {
+    margin-bottom: 0;
+}
+
+/************************/
+
+.section-title {
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 10px 0;
+    margin: 5px 0 5px 0;
+}
+
+/************************/
+
+.checkedout-with-table tr td {
+    border-bottom: none;
+}
+
+.checkedout-with-table tr + tr.checkedout-with td {
+    border: none;
+}
+
+/************************/
+
+.booking-createdby-info {
+    margin-top: -7px;
+    margin-left: 19px;
+}
+
+.booking-precheckout {
+    margin-top: 20px;
+    padding: 10px 10px 10px 15px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.booking-precheckout h3 {
+    margin-top: 0 !important;
+}
+
+.booking-precheckout .btn {
+    margin: 0;
+    float: right;
+}
+
+/************************/
+
+.resource-booking-item-details p, .resource-booking-item-details table {
+    color: #888;
+}
+.resource-booking-item-details h3 {
+    margin-top: 20px !important;
+}
+.resource-booking-item-details h3:first-of-type {
+    margin-top: 5px !important;
+}
+
+/************************ MVC inside Webforms ************************/
+.mvc button, .mvc input[type="submit"], .mvc input[type="button"] {
+    width: auto;
+    margin: 0;
+}
+
+.mvc .btn-primary:disabled, .mvc .btn-primary:disabled:hover {
+    background-color: #337ab7;
+}
+
+.mvc label, .mvc span.control-label {
+    font-weight: 700;
+    color: #555;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: auto;
+    overflow: visible;
+}
+
+.form-control {
+    border-radius: 1px;
+}
+
+.mvc .checkbox input {
+    margin-left: -20px;
+}
+
+em.req {
+    background-image: url("../Icons/required.png");
+    display: inline-block;
+    height: 10px;
+    margin-left: 2px;
+    width: 8px;
+}
+
+.modal-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.modal-content {
+    border-radius: 1px;
+}
+.modal-footer {
+    text-align: left;
+}
+.modal-footer .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.modal.fade .modal-dialog {
+    transform: translate(0, 0);
+}
+
+.field-validation-error {
+    color: #b94a48;
+    font-size: 12px;
+    text-transform: initial;
+}
+.field-validation-valid {
+    display: none;
+}
+input.input-validation-error, select.input-validation-error, textarea.input-validation-error,
+.minutesselector .input-validation-error ~ input.minutesselector-unit {
+    border: 1px solid #b94a48;
+    background-color: #ffd7da;
+}
+input.input-validation-error:focus, select.input-validation-error:focus, textarea.input-validation-error:focus,
+.minutesselector .input-validation-error ~ input.minutesselector-unit:focus {
+    border: 1px solid #b94a48;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(185, 74, 74, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(185, 74, 74, 0.6);
+}
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.mvc .alert {
+    border-radius: 0;
+    background: no-repeat 15px 50%;
+    color: inherit;
+    padding: 20px 20px 20px 75px;
+    margin: 15px 0;
+}
+.mvc .alert-danger {
+    background-color: #ffebeb;
+    background-image: url("../Icons/ErrorIcon.png");
+    border-color: rgb(164, 8, 8);
+}
+
+
+.mvc th.shrink, .mvc td.shrink {
+    width: 1px;
+}
+.mvc td.nowrap {
+    white-space: nowrap;
+}
+
+
+.mvc .text-list-info {
+    color: #888;
+}
+.mvc .icon16.icon-before {
+    margin-right: 3px;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+}
+
+.mvc .icon-resource-type {
+    background: url("../icons/type-grey.png") no-repeat 0 50%;
+}
+.mvc .icon-resource-barcode {
+    background: url("../icons/barcode.png") no-repeat 0 50%;
+}
+.mvc .resource-main-cell {
+    min-width: 150px;
+}
+.mvc .resource-thumbnail-cell {
+    padding: 5px 8px !important;
+    width: 60px;
+}
+.mvc .resource-thumbnail-cell img {
+    width: 60px;
+    height: 60px;
+    top: 0 !important;
+    margin: 0 !important;
+}
+
+/************************************************/

@@ -1,0 +1,307 @@
+/*Landing Page Search Bar*/
+
+.form-inline .input-group {
+    width: 100%;
+    margin-top: -10px;
+}
+
+.twitter-typeahead {
+    padding: 0;
+    margin-bottom: -1rem;
+}
+
+.twitter-typeahead .query {
+    height: 34px;
+    width: 100% !important;
+    top: 12px !important;
+    display: block;
+    margin-left: 0.5rem;
+}
+
+.input-group-btn .btn.input-lg {
+    height: 34px;
+    display: block;
+    margin-left: 0.5rem;
+}
+
+.input-group-btn {
+    padding: 0;
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+}
+
+
+
+/*Landing Page Search Bar - Mobile*/
+@media screen and (max-width: 767px) {
+    .form-inline .input-group label, .twitter-typeahead, .form-inline .input-group-btn {
+        width: 100% !important;
+	    display: block !important;
+	}
+
+	.twitter-typeahead input {
+	    position: relative;
+	    width: 100% !important;
+	    margin-top: -1rem ;
+	    margin-bottom: 2.2rem !important;
+	    margin-left: 0 !important;
+	    min-width: 300px;
+	}
+
+	.twitter-typeahead input.tt-hint {
+	    position: absolute;
+	    top: 11px;
+        width: 100% !important;
+	}
+
+	.form-inline .input-group-btn, .form-inline .input-group-btn .btn.input-lg {
+	    margin-left: 0;
+        clear: both;
+	}
+}
+
+
+/*tt-menu*/
+.form-inline .tt-menu {
+    left: 5px !important;
+    width: 255px !important;
+    top: 105% !important;
+}
+
+@media screen and (max-width: 767px) {
+  .form-inline .tt-menu {    
+    width: 100% !important;
+    left: 0 !important;
+    top: 32px !important;
+  }
+}
+
+/*Default Results*/
+.course-list li {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.course-list .search-tier {
+    display: none    
+}
+
+
+#search-history a {
+    display: block;
+    margin: 1rem 0;
+}
+
+#search-history h2 span,
+#search-history h3 span{    
+    font-size: 1.5rem
+}
+
+.breadcrumb.ng-scope {
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+.breadcrumb.ng-scope ol.list-inline {
+    padding: 0 1rem;    
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+/*Firefox Issue code*/
+
+.firefox .input-group-btn .input-lg {
+    position: absolute;
+    bottom: -10px;
+}
+.firefox .twitter-typeahead .tt-input {
+    top: 10px !important;
+    height: 33px;
+} 
+.firefox .twitter-typeahead .tt-hint {
+    top: 11px !important;
+    height: 32px;
+} 
+.firefox label {
+    display: block;
+    height: 33px;
+}
+@media screen and (max-width: 767px) {
+    .firefox .input-group-btn .input-lg {
+        position: absolute;
+        bottom: -28px;
+    }
+}
+
+.ie.form-inline .tt-menu {
+    top: 138% !important;
+}
+.ie input[value] {
+    padding-top: 3px;    
+}
+
+li.result a {
+    word-break: break-all;
+}
+
+
+@media screen and (min-width: 992px) {
+  aside.col-md-3.hidden-print {    
+    margin-top: -28.3rem;
+  }
+}
+
+/*Course Facets*/
+.panel-group.flb-panel, .panel-group.flb-panel .panel, .panel-group.flb-panel .panel ul.list-group li a, .flb-panel .collapse-trigger {
+    background-color: #f3f3f3;
+}
+.panel-group.flb-panel .panel {
+    margin: 1rem 0;    
+}
+
+.panel-group.flb-panel .panel, .flb-panel .collapse-trigger {
+    border: none;
+}
+
+.panel-group.flb-panel a.panel-toggle:before {
+    content: "";
+}
+
+.panel-group.flb-panel a.panel-toggle {
+    text-decoration: none;
+}
+
+.panel-group.flb-panel a.panel-toggle:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.panel-group.flb-panel .panel ul.list-group {
+    margin: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.panel-group.flb-panel .panel ul.list-group li {
+    margin-left: 1rem;
+}
+
+.panel-group.flb-panel .panel ul.list-group li a {
+    padding: 2px;
+    text-transform: capitalize;
+    color: #069;
+}
+
+.panel-group.flb-panel .panel ul.list-group a.collapse-trigger {
+    margin-bottom: 1rem;
+}
+
+.flb-panel .collapse-trigger:before {
+    content:"\e082";    
+}
+
+.flb-panel .collapse-trigger.collapsed:before {
+    content:"\e081";
+}
+
+.flb-panel .collapse-trigger:after {
+    content: " Show fewer options";
+}
+
+.flb-panel .collapse-trigger.collapsed:after {
+    content: " Show more options";
+}
+
+.list-group-item .badge {
+    float: none;
+    color: #555;
+    vertical-align: middle;
+    background-color: #ccc;
+    margin-left: 2px;
+}
+
+#search-facets-breadcrumb .btn-default {
+        color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+
+#search-facets-breadcrumb .btn-default:hover {
+        color: #fff;
+    background-color: #424a52;
+    border-color: #424a52;  
+}
+#search-facets-breadcrumb .facets-breadcrumb-label {
+    font-size: 16px;    
+}
+#search-facets-breadcrumb .facets-applied {
+    padding: 1rem
+}
+
+#search-facets-breadcrumb .facets-applied li {
+    margin-bottom: 0    
+}
+
+/* start insert by wah 2019-01-18 */
+
+       /* NEW - ADDED CSS */
+
+.main-wrapper h1 {
+    margin: 30px 0;
+}
+.panel-group.flb-panel .panel ul.list-group {
+    margin: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+}
+.panel-group.flb-panel .panel ul.list-group li {
+    margin-left: 0;
+}
+.panel-group.flb-panel .panel {
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.0);
+    box-shadow: 0 0 0 rgba(0,0,0,.0);
+}
+.flb-panel .panel-toggle {
+    color: #000;
+    font-weight: 700;
+}
+.panel-group.flb-panel .panel ul.list-group li a {
+    padding: 2px;
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+}
+.list-group-item .badge {
+    float: none;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #000;
+    margin-left: px;
+}
+.course-list li ul li {
+    border-top: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+.course-list li ul li+li:before {
+    padding: 0 10px 0 0;
+    color: #000;
+    content: "\007c";
+}
+h3 a {
+    color: #000;
+    text-decoration: none;
+}    
+h3 a:focus, h3 a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.result a {
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+}  
+
+/* end insert by wah 2019-01-18 */

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	 
+	 
+	 
+	 
+	
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/bootstrap/css/bootstrap.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/styles.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/topbar.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/layouts/onecolumn.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.search/css/search.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/component/autocomplete.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/component/richdropdown.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.equella/css/resultactions.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.search/css/searchresults.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.itemlist.standard/css/commentsdisplay.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.itemlist/css/itemlist.css" media="all">
+<link rel="stylesheet" type="text/css" href="public/htmleditorstyles/6acb521e-f929-4826-87b8-7d108a58431b/styles.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.standard/css/themes/equella/jquery-ui.css" media="all">
+<link rel="stylesheet" type="text/css" href="p/r/6.4.r1676/com.tle.web.sections.standard/css/autosubmit.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/customer.css" media="all">
+		
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerycore/jquery.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/bootstrap/js/bootstrap.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.timer.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/heartbeat.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/js/ajaxhelper.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.effect.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.effect-blind.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/helpandoptions.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/standard.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.searching/scripts/updateinterface.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.search/js/resultsupdate.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.scrollTo.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/js/ajaxeffects.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/js/json2.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/submit.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/js/select.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/resultactions.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.itemlist.standard/scripts/itemlistattachments.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.cloud/scripts/cloud.js"></script>
+	<script type="text/javascript">function refsq_s(){postAjaxJSON(_f(),'$UP9$sq.saveQuery',[],function(results,status){showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),results,null);}
+), showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),null,null);}
+frefcrt_cs = function(){Cloud.onSearch(function(p1){return postAjaxJSON(_f(),'crt.onSearch',[],p1);}
+,$('#crt_cs'),'...');}
+;i18n_com_tle_web_sections_equella_alreadysubmitting = 'The page is already being submitted';function getsq_currentHidden(){return _e('sq_currentHidden').value;}
+function changetype(val){_e('type_hid').value = val;_subev('sr.resultTypeChanged');}
+function reftoggle_fd153e3be2d3417cbce61a21bd5c27531(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_fd153e3be2d3417cbce61a21bd5c27531'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_fd153e3be2d3417cbce61a21bd5c27531'),null,ItemListAttachments.endToggle);}
+function reftoggle_af56708a914a428aa79a6f41fe9890e01(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_af56708a914a428aa79a6f41fe9890e01'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_af56708a914a428aa79a6f41fe9890e01'),null,ItemListAttachments.endToggle);}
+function reftoggle_43a64b16f1384471aa3296a8268298a01(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_43a64b16f1384471aa3296a8268298a01'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_43a64b16f1384471aa3296a8268298a01'),null,ItemListAttachments.endToggle);}
+function reftoggle_f895e42dfaf34a329ea5f57e702292d71(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_f895e42dfaf34a329ea5f57e702292d71'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_f895e42dfaf34a329ea5f57e702292d71'),null,ItemListAttachments.endToggle);}
+function reftoggle_a647f60c17fd4f8eb8a026db71bf6cd11(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_a647f60c17fd4f8eb8a026db71bf6cd11'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_a647f60c17fd4f8eb8a026db71bf6cd11'),null,ItemListAttachments.endToggle);}
+function reftoggle_e48fa561c39448d1ad956a08d5e962981(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_e48fa561c39448d1ad956a08d5e962981'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_e48fa561c39448d1ad956a08d5e962981'),null,ItemListAttachments.endToggle);}
+function reftoggle_6736493eb33549448ed52b0cd1f62de01(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_6736493eb33549448ed52b0cd1f62de01'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_6736493eb33549448ed52b0cd1f62de01'),null,ItemListAttachments.endToggle);}
+function reftoggle_9e40759fc6cc46bda48b42e508f3b02d1(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_9e40759fc6cc46bda48b42e508f3b02d1'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_9e40759fc6cc46bda48b42e508f3b02d1'),null,ItemListAttachments.endToggle);}
+function reftoggle_667f1148c0bc44a8a033456638c72d3b1(p1,p2,p3){postAjaxJSON(_f(),'$UP0$ilad.toggleAttachments',[p1, p2, p3],function(results,status){AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_667f1148c0bc44a8a033456638c72d3b1'),results,ItemListAttachments.endToggle);}
+), AjaxFX.updateDomWithActivity('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/ajax-loader.gif',$('#toggle_667f1148c0bc44a8a033456638c72d3b1'),null,ItemListAttachments.endToggle);}
+function changepage(page){_e('page_hid').value = page;postAjaxJSON(_f(),'$UP11$',[],function(results,status){showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),results,null);}
+), showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),null,null);}
+</script>
+	
+	<title>Search | EQUELLA</title>
+	</head>
+	<body><form id="eqpageForm" method="POST" action="https://radar.brookes.org.cn/radar/searching.do"><div style="display:none;" class="_hiddenstate"><input type="hidden" name="uc" value="true">
+<input type="hidden" name="sra.showing" value="NONE">
+<input type="hidden" name="sort" value="rank">
+<input type="hidden" name="dr" value="AFTER">
+<input type="hidden" name="p_pp" value="min">
+<input type="hidden" name="__xsrf" value="584f257a-6248-4e20-a290-7342a7415414">
+</div>	<div id="wrapper">
+
+	
+
+<div id="topbar"> 
+	<div id="topbar-wrap"> 
+		<div id="topbar-inner">
+			<div id="topmenu"> 
+<span id="temptopbar_editUserLink" title="Edit user details"><i class="icon-user icon-white"></i> guest</span>			</div> 
+		</div> 
+	</div> 
+</div>
+<div id="header" role="banner"> 
+	<div id="header-wrap"> 
+		<div id="header-inner"> 
+			<div class="badge">
+				<a href="home.html" title="Return to dashboard">
+EQUELLA				</a>
+			</div> 
+			<div class="banner">Search</div> 
+		</div> 
+	</div> 
+</div>
+	 	<div id="body">
+			<div id="body-wrap1">
+				<div id="body-wrap2">
+					<div id="body-wrap3">
+						<div id="body-inner">
+
+
+<div id="helpAndOptions">	<div id="button-bar">
+<button id="bluebar_help_button" class="btn btn-equella btn-mini" onclick="postAjaxJSON(_f(),'temp$UP0$temphao.show',['bluebar_help'],function(results,status){blindDomResults($('#helpAndOptions'),results,null);}
+), blindDomResults($('#helpAndOptions'),null,null);return false;" type="button"><i class="icon-chevron-down icon-white"></i> Help</button><button id="bluebar_screenoptions_button" class="btn btn-equella btn-mini" onclick="postAjaxJSON(_f(),'temp$UP0$temphao.show',['bluebar_screenoptions'],function(results,status){blindDomResults($('#helpAndOptions'),results,null);}
+), blindDomResults($('#helpAndOptions'),null,null);return false;" type="button"><i class="icon-chevron-down icon-white"></i> Screen options</button>	</div>
+	
+</div>							<div id="content" class="content">
+								<div id="content-bottom">
+									<div id="content-inner" class="page-layout-menu-full">
+		
+		
+										<div id="content-body" role="main" class="search-layout">
+
+	
+
+<div id="col">
+		
+<div id="searchform" class="area">	<div class="query-wrapper" role="search">
+		
+		<div id="querycontainer" class="input-append">
+<div id="q_autocomplete" class="autocomplete-container" onautoselect="searchFunction([refsq_s, frefcrt_cs, fadeResultsContainerIn]);"><input id="q" class="real" type="text" name="q" placeholder="Enter search terms..."><input class="prompt" type="text" disabled="disabled"></div>					
+<button id="searchform-search" class="btn btn-primary btn-mini" name="sq_s" onclick="searchFunction([refsq_s, frefcrt_cs, fadeResultsContainerIn]);return false;" title="Search" type="button"><i class="icon-search icon-white"></i></button>		</div>
+		
+		<div id="withincontainer">
+<select id="searchform-in" class="form-control" name="in" onchange="changedWhere({collectionSelected:function(){return postAjaxJSON(_f(),'$UP5$sq.changedWhere',[],function(results,status){showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),results,null);}
+), showNewResults('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchresults'),null,null);}
+,powerSelected:function(){return postAjaxJSON(_f(),'$UP6$sq.changedWhere',[],function(results,status){AjaxFX.updateDomSilent('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchform'),results,null);}
+), AjaxFX.updateDomSilent('p/r/6.4.r1676/com.tle.web.sections.standard/images/ajax/doing.gif',$('#searchform'),null,null);}
+,remoteSelected:function(){return _subev('sq.forwardToRemote');}
+},getSelectedValue(_e('searchform-in')),getsq_currentHidden());return false;"><optgroup label="Collections"><option value="all">Within all resources</option>
+<option value="Cc743b7b3-7e65-4a7c-b932-a995262e8659">2012 - Legacies for learning</option>
+<option value="C50c0f666-49e7-4c6e-857d-72652e9dd097">Archives</option>
+<option value="Ced7a24ad-f74c-4465-9a32-abda11eec59e">Bad url collection</option>
+<option value="C96b1e15d-1a0d-4e2f-88cf-f14ec53483e2">Brookes Learning and Teaching Conference</option>
+<option value="C855da076-c559-4c0b-91a5-99bf9d6aba6b">Brookes Virtual Help</option>
+<option value="C2f8887a8-c788-d2ae-a539-c258a2adaa96">Cartoons</option>
+<option value="C66860e9a-4a2d-41d1-8336-db3caa7a0b7d">eDissertations</option>
+<option value="Cd6bd9758-527a-46cd-bfe2-c433766e8fca">eTheses</option>
+<option value="Ce1fe215d-84a9-40bd-b65a-97910f60c9ab">Examination Papers</option>
+<option value="C2496a522-26b2-41c4-8b26-de2e2cf12357">IJEBCM</option>
+<option value="C7ff62ba4-a82f-4dbb-8cb8-e389f5e1edd9">Information about RADAR</option>
+<option value="C9febf16c-c8f3-7d4d-1e19-a072d2890eee">JISC Learner Experiences of e-Learning</option>
+<option value="D81763c71-a1a9-46ec-9de5-4492521aac97:">Learning Resources</option>
+<option value="C55e404a9-18a6-4196-ad4f-33d6407e928c">OER</option>
+<option value="Cafee126f-04b2-41a9-a6dd-b29b7c6c20ab">Outputs</option>
+<option value="Cbcb3615b-98ff-4693-8a90-52590d91112a">Podcasts</option>
+<option value="C71e3dcd9-8029-4d43-ad3a-34481934d059">Research</option>
+<option value="C119baa97-d0b6-0463-26ae-7b7f8745fdd9">Teaching collection</option>
+<option value="C279f9d47-a49a-47c4-8c6b-adf6955fc777">Videos</option>
+</optgroup><optgroup label="Advanced searches"><option value="Pe87e83f0-a5ce-9dd2-2fb5-c28be2c08ee8">_Teaching collection</option>
+<option value="P691b6f2f-22ea-282f-5023-551615dbeee5">Brookes Virtual Help</option>
+<option value="Pe42c606a-cb61-45b8-b574-0f4b746a4122">POVALi</option>
+<option value="Pb8891373-9480-4590-a820-48d6a38c0324">Research</option>
+</optgroup></select>		</div>
+		
+		<div id="dropdowncontainer"></div>
+		
+<div id="wherecontainer">  <input id="sq_currentHidden" type="hidden" name="sq_currentHidden" value=""></div>		
+	</div>
+	
+<div id="wizardcontainer"></div>	
+
+<div id="searchform-filteredout"></div>		<div class="queryactions">
+		</div>
+</div>
+<div id="searchresults-outer-div">
+<div id="searchresults-header-cont">			<input type="hidden" id="searchUrl" value="https://radar.brookes.org.cn/radar/searching.do?type=standard&sort=rank&dr=AFTER">
+		
+			<div class="searchresults-header">
+<div id="result-type-select" onchange="_subev('sr.resultTypeChanged');return false;"><input type="hidden" id="type_hid" name="type" value="standard">
+			<strong>Standard</strong>
+		<span class="separator"> | </span>
+<a href="javascript:void(0);" title="Images" onclick="changetype('gallery');return false;">Images</a>		<span class="separator"> | </span>
+<a href="javascript:void(0);" title="Videos" onclick="changetype('video');return false;">Videos</a>		
+</div>					<div id="searchresults-stats">1 to 10 of 31,993</div>
+			</div>
+</div>	
+
+	
+
+<div id="actionbuttons"><button id="sra_sort" class="btn btn-equella btn-mini" name="sra_sort" onclick="postAjaxJSON(_f(),'$UP3$sra.show',['SORT'],function(results,status){showHideActions($('#searchresults-actions'),results,null);}
+), showHideActions($('#searchresults-actions'),null,null);return false;" type="button"><i class="icon-chevron-down icon-white"></i> Sort</button><button id="sra_filter" class="btn btn-equella btn-mini" name="sra_filter" onclick="postAjaxJSON(_f(),'$UP3$sra.show',['FILTER'],function(results,status){showHideActions($('#searchresults-actions'),results,null);}
+), showHideActions($('#searchresults-actions'),null,null);return false;" type="button"><i class="icon-chevron-down icon-white"></i> Filter</button></div>
+<div id="searchresults-actions"></div>	
+<div id="searchresults-cont">		
+<div id="searchresults" class="searchresults area"><div class="itemlist">
+	
+
+<div id="i10" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="fd153e3b-e2d3-417c-bce6-1a21bd5c2753" data-itemversion="1" href="javascript:;" title="Episode 18: Ana Sampson talks to Niall Munro">Episode 18: Ana Sampson talks to Niall Munro</a> 
+<div id="toggle_fd153e3be2d3417cbce61a21bd5c27531" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_fd153e3be2d3417cbce61a21bd5c27531'),$('#attachments_fd153e3b-e2d3-417c-bce6-1a21bd5c27531'),reftoggle_fd153e3be2d3417cbce61a21bd5c27531,'fd153e3b-e2d3-417c-bce6-1a21bd5c2753',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>In the podcast, Ana discusses how she got into editing anthologies, how she goes about putting her anthologies together and making tough decisions about which poems to keep in and leave out, and why she thinks her most recent anthologies featuring only women poets - She Is Fierce and She Will Soar, both published by Pan Macmillan - are particularly important. You can find out more about Ana's work on her website (anasampson.co.uk) and follow her on Twitter (@AnaBooks).
+
+Ana and Niall discuss three poems from She Will Soar: 'The Sea-Shore' by Letitia Elizabeth Landon, an excerpt from Elizabeth Barrett Browning's verse novel Aurora Leigh, and 'Sonnet XXXI' by Edna St. Vincent Millay. To read these poems, we are absolutely delighted to welcome the acclaimed actress-writer-director Romola Garai. Romola has worked extensively in film, television and theatre, and you will very likely have seen her in films such as Atonement or Suffragette, or on television, in shows like The Crimson Petal and the White for which sh&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607031532348" class="timeago">2020年12月3日 下午9:38</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_fd153e3b-e2d3-417c-bce6-1a21bd5c27531"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','fd153e3b-e2d3-417c-bce6-1a21bd5c2753/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i11" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="af56708a-914a-428a-a79a-6f41fe9890e0" data-itemversion="1" href="javascript:;" title="Anti Racist Teaching"><img src="thumbs/af56708a-914a-428a-a79a-6f41fe9890e0/1/1e8127df-88e9-48a1-a98f-c0f6290e.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="af56708a-914a-428a-a79a-6f41fe9890e0" data-itemversion="1" href="javascript:;" title="Anti Racist Teaching">Anti Racist Teaching</a> 
+<div id="toggle_af56708a914a428aa79a6f41fe9890e01" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_af56708a914a428aa79a6f41fe9890e01'),$('#attachments_af56708a-914a-428a-a79a-6f41fe9890e01'),reftoggle_af56708a914a428aa79a6f41fe9890e01,'af56708a-914a-428a-a79a-6f41fe9890e0',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>An audio discussion</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607013404768" class="timeago">2020年12月3日 下午4:36</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_af56708a-914a-428a-a79a-6f41fe9890e01"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','af56708a-914a-428a-a79a-6f41fe9890e0/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i12" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="43a64b16-f138-4471-aa32-96a8268298a0" data-itemversion="1" href="javascript:;" title="Arts-based methods [abstract]"><img src="thumbs/43a64b16-f138-4471-aa32-96a8268298a0/1/d595473d-0b35-412a-971c-6646117b.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="43a64b16-f138-4471-aa32-96a8268298a0" data-itemversion="1" href="javascript:;" title="Arts-based methods [abstract]">Arts-based methods [abstract]</a> 
+<div id="toggle_43a64b16f1384471aa3296a8268298a01" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_43a64b16f1384471aa3296a8268298a01'),$('#attachments_43a64b16-f138-4471-aa32-96a8268298a01'),reftoggle_43a64b16f1384471aa3296a8268298a01,'43a64b16-f138-4471-aa32-96a8268298a0',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>Researchers are increasingly using arts-based methods in geography to explore new pathways in the creation of knowledge through creative practice. This can be in any phase of the research, from initial data collection and analysis, to interpretation and representation. Creative practice in geography can stretch across different disciplines, from the literary arts of poetry and creative prose, to performance-based music and drama, to dance and the visual arts. The researcher can either work as &lsquo;researcher-artist&rsquo; mobilizing these methods in their own work, or collaborate with research participants through participatory arts-based methods. Both approaches present geographers with new pathways to create knowledge within the qualitative research paradigm, expanding their capacity to explore varied understandings and experiences of place and space. These methods reflect a growing interest in geographical scholarship towards the affective and embodied aspects of everyday practice, offering a more fluid approach to &hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">text</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Carpenter, Juliet; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">openAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607010542803" class="timeago">2020年12月3日 下午3:49</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_43a64b16-f138-4471-aa32-96a8268298a01"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','43a64b16-f138-4471-aa32-96a8268298a0/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i13" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="f895e42d-faf3-4a32-9ea5-f57e702292d7" data-itemversion="1" href="javascript:;" title="Assessing speech at three years of age in the cleft palate population: A scoping review of assessment practices"><img src="thumbs/f895e42d-faf3-4a32-9ea5-f57e702292d7/1/c410a339-b3f6-4b77-aa60-57294eb8.jpg" alt="" title=""></a><a data-itemuuid="f895e42d-faf3-4a32-9ea5-f57e702292d7" data-itemversion="1" href="javascript:;" title="Assessing speech at three years of age in the cleft palate population: A scoping review of assessment practices"><img src="thumbs/f895e42d-faf3-4a32-9ea5-f57e702292d7/1/c410a339-b3f6-4b77-aa60-57294eb8.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="f895e42d-faf3-4a32-9ea5-f57e702292d7" data-itemversion="1" href="javascript:;" title="Assessing speech at three years of age in the cleft palate population: A scoping review of assessment practices">Assessing speech at three years of age in the cleft palate population: A scoping review of assessment practices</a> 
+<div id="toggle_f895e42dfaf34a329ea5f57e702292d71" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_f895e42dfaf34a329ea5f57e702292d71'),$('#attachments_f895e42d-faf3-4a32-9ea5-f57e702292d71'),reftoggle_f895e42dfaf34a329ea5f57e702292d71,'f895e42d-faf3-4a32-9ea5-f57e702292d7',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>Background. There is no consensus in the UK regarding the types of speech samples or parameters of speech that should be assessed at 3 years of age in children with cleft palate &plusmn; cleft lip (CP&plusmn;L), despite cleft units routinely assessing speech at this age. The standardization of assessment practices would facilitate comparisons of outcomes across UK cleft units; earlier identification of speech impairments&mdash;which could support more timely treatments; and more reliable recording of therapy impacts and surgical interventions.
+
+Aims. To explore assessment practices used to assess speech in 3&#8208;year&#8208;old children with CP&plusmn;L, including speech parameters, methods of assessment and the nature of the speech sample used.
+
+Methods &amp; Procedures. A broad examination of the literature was undertaken through the use of a scoping review conducted in accordance with Joanna Briggs Institute guidelines. Search terms were generated from a preliminary search and then used in the main search (Medline, CINAHL, Embase, AMED and PsycINF&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">journal article</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Fitzpatrick, Beth; Coad, Jane; Sell, Debbie; Rihtman,Tanya; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">embargoedAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607009974383" class="timeago">2020年12月3日 下午3:39</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_f895e42d-faf3-4a32-9ea5-f57e702292d71"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','f895e42d-faf3-4a32-9ea5-f57e702292d7/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i14" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="b16690dc-e0cb-4b16-8137-36340b6bb46a" data-itemversion="1" href="javascript:;" title="Institutional Sustainability Assessment">Institutional Sustainability Assessment</a> </h3>
+	
+					<p></p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">book part</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Kosta, Katerina; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2018</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">embargoedAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607009951250" class="timeago">2020年12月3日 下午3:39</abbr></span>							</div>
+					</div>
+				</div>
+			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','b16690dc-e0cb-4b16-8137-36340b6bb46a/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i15" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="a647f60c-17fd-4f8e-b8a0-26db71bf6cd1" data-itemversion="1" href="javascript:;" title="C&amp;A New Store Concept (NSC): Design Research and Evaluation Report"><img src="thumbs/a647f60c-17fd-4f8e-b8a0-26db71bf6cd1/1/7d2ed01b-2640-4de6-8927-a7270ecb.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="a647f60c-17fd-4f8e-b8a0-26db71bf6cd1" data-itemversion="1" href="javascript:;" title="C&amp;A New Store Concept (NSC): Design Research and Evaluation Report">C&amp;A New Store Concept (NSC): Design Research and Evaluation Report</a> 
+<div id="toggle_a647f60c17fd4f8eb8a026db71bf6cd11" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_a647f60c17fd4f8eb8a026db71bf6cd11'),$('#attachments_a647f60c-17fd-4f8e-b8a0-26db71bf6cd11'),reftoggle_a647f60c17fd4f8eb8a026db71bf6cd11,'a647f60c-17fd-4f8e-b8a0-26db71bf6cd1',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>In recent years, &lsquo;experience&rsquo; has become an over-used and ill-de!ned term in the creation of
+physical environments, particularly in the retail industry. Designers and clients realise that the
+spaces providing sales or services need to be more than purely functional. An Econsulting/Adobe survey of 2020 recorded that 86% of customers were willing to spend more for a great experience over price and product.
+In 2015 Gensler were asked by C&amp;A, a long-established European retailer in a&quot;ordable fashion,
+to design a new retail concept applicable to their 1,500 stores across 12 countries. Due to growing competition, the aim was to develop from a transactional retail model to a customer &lsquo;experience&rsquo; focus. There was, however, little methodology available to guide the design decisions or
+to provide relevant criteria that would be appropriate to establishing a measurable outcome.
+This document describes the research carried out by the Gensler team, led by Jon Tollit, together
+with C&amp;A during the design development proces&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">other</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Tollit, Jon; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">openAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607006677639" class="timeago">2020年12月3日 下午2:44</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_a647f60c-17fd-4f8e-b8a0-26db71bf6cd11"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','a647f60c-17fd-4f8e-b8a0-26db71bf6cd1/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i16" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="e48fa561-c394-48d1-ad95-6a08d5e96298" data-itemversion="1" href="javascript:;" title="An exploration of occupational choices in adolescence: A constructivist grounded theory study. "><img src="thumbs/e48fa561-c394-48d1-ad95-6a08d5e96298/1/9a6439a5-d29f-4d04-aec5-00ae8410.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="e48fa561-c394-48d1-ad95-6a08d5e96298" data-itemversion="1" href="javascript:;" title="An exploration of occupational choices in adolescence: A constructivist grounded theory study. ">An exploration of occupational choices in adolescence: A constructivist grounded theory study. </a> 
+<div id="toggle_e48fa561c39448d1ad956a08d5e962981" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_e48fa561c39448d1ad956a08d5e962981'),$('#attachments_e48fa561-c394-48d1-ad95-6a08d5e962981'),reftoggle_e48fa561c39448d1ad956a08d5e962981,'e48fa561-c394-48d1-ad95-6a08d5e96298',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>Background. Adolescence is a critical period within the life course, for developing adult occupational competencies and health behaviours. Few studies have considered how 16&ndash;17&thinsp;year olds choose activities and behaviours from an occupational perspective.
+
+Aim and objectives. To explore how adolescents aged 16&ndash;17&thinsp;years old make choices about their daily occupations to inform a theoretical model of occupational choice.
+
+Materials and methods. About 27 secondary school students aged 16&ndash;17&thinsp;years attended one of six focus groups. Transcripts were analyzed using constructivist grounded theory, informing the iterative development of a theoretical model of occupational choice.
+
+Results. Adolescent occupational choice occurred in response to experiencing needs, and was characterized by &lsquo;weighing up&rsquo; and &lsquo;juggling&rsquo; the following four key domains: &lsquo;Appraising values and priorities&rsquo;, &lsquo;Interacting with the situational context&rsquo;, &lsquo;Exploring skills and occupational repertoire&rsquo; and &lsquo;Considering time factors&rsquo;. A developing sens&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">journal article</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Parsonage, Jackie; Lund, Kristine N.; Dawes, Helen; Almoajil, Hajar; Eklund, Mona; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">embargoedAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607006670931" class="timeago">2020年12月3日 下午2:44</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_e48fa561-c394-48d1-ad95-6a08d5e962981"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','e48fa561-c394-48d1-ad95-6a08d5e96298/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i17" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="6736493e-b335-4944-8ed5-2b0cd1f62de0" data-itemversion="1" href="javascript:;" title="Care transitions in the first six months following traumatic brain injury: Lessons from the CENTER-TBI study">Care transitions in the first six months following traumatic brain injury: Lessons from the CENTER-TBI study</a> 
+<div id="toggle_6736493eb33549448ed52b0cd1f62de01" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_6736493eb33549448ed52b0cd1f62de01'),$('#attachments_6736493e-b335-4944-8ed5-2b0cd1f62de01'),reftoggle_6736493eb33549448ed52b0cd1f62de01,'6736493e-b335-4944-8ed5-2b0cd1f62de0',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>Background: No large international studies have investigated care transitions during or following acute hospitalisations for traumatic brain injury (TBI).    
+Objectives: To characterise various TBI-care pathways and the number of associated transitions during the first six months after TBI, and to assess the impact of these on functional TBI outcome controlled for demographic and injury-related factors.   
+Methods:  A cohort study of patients with TBI admitted to a variety of trauma centres were enrolled in the Collaborative European NeuroTrauma Effectiveness Research in TBI (CENTER-TBI) study. Number of transitions and specific care pathways were identified. Multiple logistic regression analyses were used to assess impact of number of transitions and care pathways on functional outcome six months post-injury as assessed by Glasgow Outcome Scale- Extended (GOSE). 
+Results:  3133 patients survived the acute TBI-care pathway, and had at least one documented in-hospital transition at six-months follow-up. The m&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">journal article</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Dawes, Helen; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">Not yet published.</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">metadataOnlyAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607005358827" class="timeago">2020年12月3日 下午2:22</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_6736493e-b335-4944-8ed5-2b0cd1f62de01"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','6736493e-b335-4944-8ed5-2b0cd1f62de0/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i18" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="9e40759f-c6cc-46bd-a48b-42e508f3b02d" data-itemversion="1" href="javascript:;" title="Spatially-based urban energy modelling approach for enabling energy retrofits in Oxfordshire"><img src="thumbs/9e40759f-c6cc-46bd-a48b-42e508f3b02d/1/3b916737-a6b7-4260-9865-efffd03a.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="9e40759f-c6cc-46bd-a48b-42e508f3b02d" data-itemversion="1" href="javascript:;" title="Spatially-based urban energy modelling approach for enabling energy retrofits in Oxfordshire">Spatially-based urban energy modelling approach for enabling energy retrofits in Oxfordshire</a> 
+<div id="toggle_9e40759fc6cc46bda48b42e508f3b02d1" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_9e40759fc6cc46bda48b42e508f3b02d1'),$('#attachments_9e40759f-c6cc-46bd-a48b-42e508f3b02d1'),reftoggle_9e40759fc6cc46bda48b42e508f3b02d1,'9e40759f-c6cc-46bd-a48b-42e508f3b02d',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>The UK government has committed to achieving net zero carbon emissions by 2050. This will require a transformation of the housing sector as it has lagged previous emissions targets. Although millions of existing homes across the UK need energy improvements, the process of identifying suitable and eligible homes is presently a time-consuming task and energy suppliers are struggling to meet their targets. To address this challenge, this paper describes the application of a data-driven geographical information system-based approach to spatially identify suitable dwellings quickly and accurately by mapping and modelling baseline energy use and potential for energy retrofit measures, singularly and in combination. 
+Drawing on publicly available datasets on housing and energy, combined with local datasets, a neighbourhood with high fuel poverty in Bicester (Oxfordshire, UK) was selected. The DECoRuM model was then used to estimate current energy use and potential for energy reduction on a house-by-house level. The &hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">conference paper</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Gupta, Rajat; Gregg, Matt; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">postEmbargoOpenAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607003932750" class="timeago">2020年12月3日 下午1:58</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_9e40759f-c6cc-46bd-a48b-42e508f3b02d1"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','9e40759f-c6cc-46bd-a48b-42e508f3b02d/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div><div id="i19" class="itemresult-wrapper">		<div class="itemresult-container">
+			<div class="itemresult">
+				<div class="itemresult-content">
+						<div class="thumbnailinlist">
+<div class="thumbfade"><a data-itemuuid="667f1148-c0bc-44a8-a033-456638c72d3b" data-itemversion="1" href="javascript:;" title="Black African and black Caribbean men&#x2019;s understanding and experiences of prostate cancer post-treatment in England: A qualitative study. "><img src="thumbs/667f1148-c0bc-44a8-a033-456638c72d3b/1/11ca4178-31ac-4afe-aad3-6a23a3c5.jpg" alt="" title=""></a></div>						</div>
+					
+					<h3 class="itemresult-title "><a class="titlelink" data-itemuuid="667f1148-c0bc-44a8-a033-456638c72d3b" data-itemversion="1" href="javascript:;" title="Black African and black Caribbean men&#x2019;s understanding and experiences of prostate cancer post-treatment in England: A qualitative study. ">Black African and black Caribbean men&rsquo;s understanding and experiences of prostate cancer post-treatment in England: A qualitative study. </a> 
+<div id="toggle_667f1148c0bc44a8a033456638c72d3b1" class="toggler" onclick="ItemListAttachments.toggle($('#toggle_667f1148c0bc44a8a033456638c72d3b1'),$('#attachments_667f1148-c0bc-44a8-a033-456638c72d3b1'),reftoggle_667f1148c0bc44a8a033456638c72d3b1,'667f1148-c0bc-44a8-a033-456638c72d3b',1);return false;">	<a title="Show attachments" href="javascript:;">
+		<i class="icon-circle-arrow-down"> </i>
+	</a>
+</div></h3>
+	
+					<p>Aim. Black African and black Caribbean men are two to three times more likely to be diagnosed with prostate cancer compared with white men, and some appear to have little knowledge of the disease. The aim of this study was to examine black African and black Caribbean men&rsquo;s understanding and experience of prostate cancer post-treatment and to create a video to raise awareness in the African and Caribbean communities of the importance of testing.
+
+Method. In total 20 black African and black Caribbean men were interviewed using a qualitative approach and the data were analysed thematically.
+
+Findings. There was a lack of knowledge and understanding of prostate cancer among the study sample, who were also sometimes exposed to misinformation within the black community, including herbal remedies. Some participants believed their racial features were a barrier to the way in which limited information was shared with them by healthcare professionals.
+
+Conclusion. There is a need to raise awareness about prostate cance&hellip;</p>
+					
+					<div class="itemresult-meta">
+							<div class="itemresult-metaline">
+								<strong>Type:</strong>
+<span class="htmlcontent">journal article</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Creators:</strong>
+<span class="htmlcontent">Alexis, Obrey; </span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Year:</strong>
+<span class="htmlcontent">2020</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Access:</strong>
+<span class="htmlcontent">postEmbargoOpenAccess</span>							</div>
+							<div class="itemresult-metaline">
+								<strong>Status:</strong>
+<span class="itemresult-meta-delim">Live<span class="separator">|</span>Last updated:<abbr title="1607002883284" class="timeago">2020年12月3日 下午1:41</abbr></span>							</div>
+					</div>
+				</div>
+<div id="attachments_667f1148-c0bc-44a8-a033-456638c72d3b1"></div>			</div>
+			<div class="itemresult-rating">
+				<div class="rating-bar">
+<span class="screen-reader" tabindex="0" alt="zero star rating average" title="zero star rating average">zero star rating average</span><div class="itemresult-stars zero"></div><a href="javascript:void(0);" title="0 comments" onclick="_subev('ilcd.seeComments','667f1148-c0bc-44a8-a033-456638c72d3b/1');return false;">0 comments</a>				</div>
+					<div class="float-right">
+					</div>
+			</div>
+		</div>
+</div></div><div id="page" class="paging"><input type="hidden" id="page_hid" name="page" value="1">
+<ul><li><span>1</span> </li><li><a href="javascript:void(0);" onclick="changepage(2);return false;">2</a> </li><li><a href="javascript:void(0);" onclick="changepage(3);return false;">3</a> </li><li><a href="javascript:void(0);" onclick="changepage(4);return false;">4</a> </li><li><a href="javascript:void(0);" onclick="changepage(5);return false;">5</a> </li><li><a href="javascript:void(0);" onclick="changepage(6);return false;">6</a> </li><li><a href="javascript:void(0);" onclick="changepage(7);return false;">7</a> </li><li><a href="javascript:void(0);" onclick="changepage(8);return false;">8</a> </li><li><a href="javascript:void(0);" onclick="changepage(9);return false;">9</a> </li><li><a href="javascript:void(0);" onclick="changepage(10);return false;">10</a> </li><li><a href="javascript:void(0);" onclick="changepage(2);return false;">next</a> </li></ul></div></div></div></div>
+</div>
+										</div>
+
+<div id="menu" class="menu-full" role="navigation">
+		<ul>
+				<li><a id="i0" style="background-image: url('p/r/6.4.r1676/com.tle.web.sections.equella/images/menu-icon-login.png')" href="javascript:;">Login to EQUELLA</a></li>
+				<li><a id="i9" style="background-image: url('p/r/6.4.r1676/com.tle.web.portal.standard/images/menu-icon-dashboard.png')" href="home.html">Dashboard</a></li>
+				<li><a id="i8" style="background-image: url('p/r/6.4.r1676/com.tle.web.searching/images/menu-icon-search.png')" href="">Search</a></li>
+		</ul>
+		<ul>
+				<li><a id="i3" style="background-image: url('p/r/6.4.r1676/com.tle.web.hierarchy/images/menu-icon-hierarchy.png')" href="hierarchy-d53e3c15-9a74-43ea-aaa.html">Oxford Brookes Research</a></li>
+				<li><a id="i4" style="background-image: url('p/r/6.4.r1676/com.tle.web.hierarchy/images/menu-icon-hierarchy.png')" href="hierarchy-ee78537a-18bc-467f-ac6.html">Student Research</a></li>
+				<li><a id="i5" style="background-image: url('p/r/6.4.r1676/com.tle.web.hierarchy/images/menu-icon-hierarchy.png')" href="hierarchy-6c1aeee5-bf08-45d7-ba2.html">Learning and Teaching</a></li>
+				<li><a id="i6" style="background-image: url('p/r/6.4.r1676/com.tle.web.hierarchy/images/menu-icon-hierarchy.png')" href="hierarchy-ae2b0c1d-b56e-4aac-9f9.html">Special Collections and Archives</a></li>
+				<li><a id="i7" style="background-image: url('p/r/6.4.r1676/com.tle.web.hierarchy/images/menu-icon-hierarchy.png')" href="hierarchy-eb463385-5b46-441f-bac.html">Podcasts</a></li>
+		</ul>
+		<ul>
+				<li><a id="i1" href="hierarchy-86e2c9d7-ef43-4b54-a38.html">About RADAR</a></li>
+				<li><a id="i2" href="hierarchy-79dbe2f6-f100-4f12-964.html">Accessibility</a></li>
+		</ul>
+</div>									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div id="footer" role="contentinfo">
+	<div id="footer-wrap">
+		<div id="footer-inner">
+			<div id="footer-links">
+				Thank you for using <a href="javascript:;">EQUELLA</a> 
+				<br>
+
+
+				<a href="javascript:;">Home</a> |  <a href="javascript:;">Privacy</a> |
+
+<a href="licences.html">Credits</a>			</div>
+
+			<div id="socialmedia">
+<a href="javascript:;" class="icon rss" title="RSS">RSS</a><a href="javascript:;" title="Twitter" class="icon twitter">Twitter</a><span>&copy; 2015 <a href="javascript:;">Pearson</a></span>			</div>
+			
+			<div id="wcag-compliance">
+				<a href="javascript:;" title="Explanation of WCAG 2.0 Level Double-A Conformance"> 
+					<img height="29" width="80" src="p/r/6.4.r1676/com.tle.web.sections.equella/images/wcag2AA.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>	</div>
+</form>	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/component/autocomplete.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.core.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.widget.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.position.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.menu.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.ui.autocomplete.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/js/autosubmit.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.equella/scripts/component/richdropdown.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.timeago.js"></script>
+	  <script type="text/javascript" src="p/r/6.4.r1676/com.tle.web.sections.standard/jquerylib/jquery.innerfade.js"></script>
+	<script type="text/javascript">jQuery.timeago.settings.strings = {prefixAgo:undefined,suffixAgo:'ago',seconds:'less than a minute',minute:'about a minute',minutes:'%d minutes',hour:'about an hour',hours:'about %d hours',day:'a day',days:'%d days',month:'about a month',months:'%d months',year:'about a year',singularYear:'1 year',years:'%d years',prefixFromNow:'in',suffixFromNow:undefined,andExtraUnits:'and'};	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', "UA-11299391-1"]);
+	_gaq.push(['_trackPageview']);
+	
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+$(function(){autocompletesearch(function(p1){return postAjaxJSON(_f(),'sq.updateSearchTerms',[],p1);}
+,_e('q_autocomplete'),{autoselect:function(){searchFunction([refsq_s, frefcrt_cs, fadeResultsContainerIn]);}
+});
+AutoSubmit.setupAutoSubmit(_e('q'),_e('searchform-search'));
+$('#searchform-in').setupRichDropDown();
+$('.timeago').timeago(true,true);
+$('.thumbfade').innerfade({speed: 750});
+$('#eqpageForm').bind('submit', function(){if (!g_bSubmitting) return false; });
+}
+);</script>	
+</body>		
+</html>

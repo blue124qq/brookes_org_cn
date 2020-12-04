@@ -1,0 +1,137 @@
+
+@import url('../../css-PlayfairDisplay.css');
+@import url('../../css-EBGaramond7CSortsMillGoudy40.css');
+
+.playfair { font-family: 'Playfair Display', serif; }
+
+.contact-us h1, .eventdetails h1 {     background-color: #424a52;     color: #fff; }
+#content img { border: 0; margin: 0; }
+a#thinkhuman {background-color: #f49103; }                a#thinkhuman:hover {background-color: #424a52; }
+
+/* BEGIN HOMEPAGE BANNERS */
+@media only screen and (min-width:970px) {
+	.rslides .slide-text-hss {
+		width: 100%;
+	}
+	.slide-text-hss h2 a {
+		bottom: 0;
+		color: #fff;
+		display: block;
+		font-size: 10px;
+		font-size: 1rem;
+		line-height: 1.2em;
+		padding: 5px;
+		position: absolute;
+		text-transform: uppercase;
+		width: 33.3%;
+	}
+	.slide-text-hss a.btn-1 {
+		background-color: #D20675;
+		left: 0;
+	}
+	.slide-text-hss a.btn-2 {
+		background-color: #8C8E8F;
+		left:33.3%;
+	}
+	.slide-text-hss a.btn-3 {
+		background-color: #444C54;
+		left:66.6%;
+	}
+}
+/*#sub_nav h2 a#section { color: #6a2150; }*/
+/* END HOMEPAGE BANNERS */
+
+/* BEGIN NEW STUDENTS INDUCTION WEBSITE */
+.highlight img { margin: 0 0 0 5px; } #mainnav li a.head {     background-image: url("https://www.brookes.ac.uk/about-brookes/faculties-and-departments/faculty-of-humanities-and-social-sciences/images/nav-id-hss.png"); background-position:0 0; } 
+/*#content img { border: 0;   margin: 5px; }*/ /* push rhs below header image on sub-section-page */ 
+body.sub-section-page #portal-column-two {   /*margin-top: 140px;*/ /*BMD*/ } 
+/* A-Z pages */ 
+ul#atoz-list { list-style-type: none; margin: 15px 0 15px 0; padding: 0; } 
+ul#atoz-list li { display: block; float: left; list-style-type: none; margin: 5px 2px 0 0; width: 24px; } 
+div#navcontainer > ul#atoz-list li a { width: auto; } 
+/* new students block in r column */ 
+.newstudents {   margin: 0 0 10px 0; } 
+.newstudents a {   text-indent:-9999px;
+  background:url('https://www.brookes.ac.uk/Site_Assets/New_Students/images/newStudentsID.png') 0 0 no-repeat;   height:120px;   display:block; } 
+.newstudents a:hover {   background:url('https://www.brookes.ac.uk/Site_Assets/New_Students/images/newStudentsID.png') 0 -120px no-repeat; } 
+/* home page - subject A-Z 260px */
+.subjects {  } 
+.subjects a {   text-indent:-9999px;   background:url('https://www.brookes.ac.uk/Site_Assets/New_Students/images/subjectA-Z.png') 0 0 no-repeat;   height:110px;   width:260px;   float:left;   display:block;   margin: 0 10px 10px 0; } 
+.subjects a:hover {   background:url('https://www.brookes.ac.uk/Site_Assets/New_Students/images/subjectA-Z.png') 0 -110px no-repeat;
+} 
+.hp-col {   display:block;   float:left;   width:260px;   margin: 10px 0 0 0; } 
+/* rhs subjects */ 
+#portal-column-two .subjects a {   width:230px;   float:none; } 
+/* blockquote blockquote {   background: #F3F3F3 url('/Site_Assets/New_Students/css/img/blockquote-trans-pink.gif') 10px 5px no-repeat;
+  margin: 0 0 10px 0;   padding: 45px 10px 10px 10px;   font-weight: bold; }  */
+/* overwrite hss.css highlight */ 
+.highlight {   background: #E0E1DD;   border:none;   padding: 10px;   margin: 0 0 10px 0; } 
+.highlight h2 {   font-size:larger;   background: none #E0E1DD;
+  margin:auto;   border:none;   padding:0 0; }
+/* END NEW STUDENTS INDUCTION WEBSITE */
+
+/* BEGIN CREATIVE WRITING ANTHOLOGY */
+
+#story { margin:3em 0; font-family: 'Sorts Mill Goudy', serif; }
+#story blockquote.epigraph { padding: 1em 5em; background: none; }
+#story blockquote.epigraph p { text-align: center; font-size: 1em; line-height: 1.3em; font-style: italic; }
+#story blockquote.epigraph p.citation { text-align: right; font-style: normal; }
+#story p + p { text-indent: 1.1em; margin-top: 0; }
+#story p { margin: 0; font-size: 1.3em; text-align: justify; line-height: 1.5em; }
+p + p:first-child:first-letter{
+	float:left;
+	font-size:400%;
+	margin-top:7px;
+	margin-right:5px;
+	color:#992E00;
+}
+#story h3 { text-align: center; font-size: 2em; line-height: 2em; }
+#story p.author { text-align: center; font-size: 1.3em; }
+#story blockquote { float: none; width: 100%; }
+/* END CREATIVE WRITING ANTHOLOGY */
+
+/* BEGIN EJRC STYLES */
+#japanese-floatright {width:50%; float:right; border:solid 1px #424a52; background:#fff; font-size:1.6rem; font-weight: 400; line-height: 2.8rem; padding: 1rem; margin-left:1rem;}
+.fg-pink {color:#d10373;}
+.right-elements {float: right; vertical-align:middle;}
+.left-elements {text-align: right; /*alignment-adjust:middle;*/ /*BMD*/}
+.slide-text.ejrcbanner { background-color: #6a2150; }
+/* END EJRC STYLES */
+
+/* BEGIN TWITTER EMBEDDED PROFILE */
+a.twitter-timeline {
+  /* Buttonish */
+  display: inline-block;
+  padding: 6px 12px 6px 30px;
+  margin: 10px 0;
+  border: #ccc solid 1px;
+  border-radius: 3px;
+  background: #f8f8f8 url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgNzIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDcyIDcyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHg9IjAiIGZpbGw9Im5vbmUiIHdpZHRoPSI3MiIgaGVpZ2h0PSI3MiIvPg0KPHBhdGggZmlsbD0iIzU1YWNlZSIgZD0iTTY4LjgxMiwxNS4xNDFjLTIuMzQ4LDEuMDM5LTQuODY5LDEuNzQzLTcuNTE5LDIuMDZjMi43MDMtMS42Miw0Ljc3OC00LjE4Nyw1Ljc1Ni03LjI0NGMtMi41MjksMS41LTUuMzMsMi41OTItOC4zMTMsMy4xNzYNCglDNTYuMzQ5LDEwLjU5MSw1Mi45NDgsOSw0OS4xODIsOWMtNy4yMjksMC0xMy4wOTIsNS44NjEtMTMuMDkyLDEzLjA5M2MwLDEuMDI2LDAuMTE4LDIuMDIxLDAuMzM4LDIuOTgxDQoJYy0xMC44ODUtMC41NDgtMjAuNTI4LTUuNzU3LTI2Ljk4Ny0xMy42NzljLTEuMTI2LDEuOTM2LTEuNzcxLDQuMTg0LTEuNzcxLDYuNTgxYzAsNC41NDIsMi4zMTIsOC41NTEsNS44MjQsMTAuODk4DQoJYy0yLjE0Ni0wLjA2OS00LjE2NS0wLjY1Ny01LjkzLTEuNjM4Yy0wLjAwMiwwLjA1NS0wLjAwMiwwLjExLTAuMDAyLDAuMTYyYzAsNi4zNDUsNC41MTMsMTEuNjM4LDEwLjUwNCwxMi44NA0KCWMtMS4xMDEsMC4yOTgtMi4yNTYsMC40NTctMy40NDksMC40NTdjLTAuODQ2LDAtMS42NjctMC4wNzgtMi40NjUtMC4yMzFjMS42NjcsNS4yLDYuNDk5LDguOTg2LDEyLjIzLDkuMDkNCgljLTQuNDgyLDMuNTEyLTEwLjEyOSw1LjYwNi0xNi4yNiw1LjYwNmMtMS4wNTUsMC0yLjA5Ni0wLjA2MS0zLjEyMi0wLjE4NGM1Ljc5NCwzLjcxNywxMi42NzYsNS44ODIsMjAuMDY3LDUuODgyDQoJYzI0LjA4MywwLDM3LjI1MS0xOS45NDksMzcuMjUxLTM3LjI0OWMwLTAuNTY2LTAuMDE0LTEuMTM0LTAuMDM5LTEuNjk0QzY0LjgzOCwyMC4wNjgsNjcuMDU4LDE3Ljc2NSw2OC44MTIsMTUuMTQxeiIvPg0KPC9zdmc+DQo=") 8px 8px no-repeat;
+  background-size: 1em 1em;
+
+  /* Text */
+  font: normal 12px/18px Helvetica, Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+}
+
+a.twitter-timeline:hover,
+a.twitter-timeline:focus {
+  /* background-color: #dedede; */
+  background-color: transparent;
+}
+
+/* Color Highlight for keyboard navigation */
+
+a.twitter-timeline:focus {
+  outline: none;
+  border-color: #0089cb;
+}
+/* END TWITTER EMBEDDED PROFILE */
+
+/* BEGIN GEOVERSE STYLES */
+div.dmsWrapper p.dmsItemWrapper {
+    font-weight: bold;
+}
+.right { text-align: right; }
+/* END GEOVERSE STYLES */

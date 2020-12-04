@@ -1,0 +1,812 @@
+/******************************************************************* calendar */
+div.calendar {
+  position: relative;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 1px;
+  
+}
+
+table.calendar {
+    border-right : 1px solid #cccccc;
+    border-left : 1px solid #cccccc
+}
+
+table.calendar tr.header th, table.calendar tr.subheader th {
+    border-style: solid;
+    border-width: 0px 0px 0px 1px;
+    border-color: #cccccc;
+    background: #f9f9f9;
+    font-weight: bold;
+    padding: 1ex 2px 1ex 2px;
+    text-align: center;
+    min-width: 50px;
+}
+table.calendar tr.subheader td, tr.header td, tr.editsubheader td{
+  background: #f9f9f9;
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  border-color: #cccccc;
+}
+table.calendar tr.editsubheader td {
+  text-align: left;
+  padding: 0 0 1px 5px;
+}
+table.calendar tr.header th {
+  
+  padding: 0.6ex 0;
+}
+
+table.calendar tr.foot td {
+  background: #fff ;
+  height: 0;
+}
+table.calendar tr.foot th {
+  background: transparent ;
+}
+
+.caledit {
+    border-left: 1px solid #cccccc;
+}
+
+table.calendar td {
+border-left:1px solid #cccccc;
+height: 24px;
+}
+
+.fakelink {
+    color: #123D68;
+    font-size: 0.8em
+}
+
+.fakelink:hover {
+    text-decoration: underline;
+}
+
+
+/********************************************************************* legend */
+div.legend {
+    padding: 5px;
+    background-color: #fff;
+    border: solid 1px #cccccc;
+}
+
+ul.legend {
+    list-style-type: none;
+    margin: 0.2em;
+    padding: 0 0 1px 0;
+    width: 100%;
+}
+ul.legend li {
+    display: inline;
+    margin: 0.2em 0.5em 0.2em 0.2em;
+    padding: 0;
+    white-space: nowrap;
+}
+
+div.legendColour {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    border: 1px solid #ccc
+}
+
+div.statusColour {
+    width: 0.5em;
+    height: 1em;
+    display: inline-block;
+    border: 1px solid #ccc
+}
+
+ul.legend div.a, div.fs {
+  background: #ffffff;
+}
+ul.legend div.sa {
+    background: #fcefd4;
+}
+ul.legend div.na {
+    background: #b6b6b6;
+}
+ul.legend div.da {
+  background: #eca69f;
+}
+ul.legend div.tpd {
+  background-image: url(../images/stripe.png);
+  background-repeat: repeat;
+  background-position: left top;
+}
+
+ul.legend div.s0 {
+    background-color: #ddd;
+}
+ul.legend div.s1 {
+    background-color: #FFC488;
+}
+ul.legend div.s2 {
+  background-color: #696;
+}
+ul.legend div.s3 {
+  background-color: #9e6262;
+}
+
+/****************************************************************** timescale */
+table.time td, table.time th {
+  background: #f9f9f9;
+  font-weight: normal;
+  line-height: 100%;
+  border-bottom: 1px solid #cccccc;
+  
+}
+table.time th {
+  font-size: 1.2em;
+  font-weight: bold;
+  vertical-align: top;
+  height: 48px; /* HourSize */
+  text-align: right;
+  padding: 0 3px;
+}
+table.time td {
+  padding: 0 2px 0 0;
+  vertical-align: top;
+  border-spacing: 1px;
+  height: 24px; /* HourSize / 2 */
+  border-left: 0 solid;
+
+}
+table.time td div {
+  padding: 3px 0;
+}
+table.time th div {
+  padding: 5px 0;
+}
+
+table.time {
+    
+    border-top: 1px solid #cccccc;
+}
+
+/******************************************************************* schedule */
+div.schedule {
+    z-index: 1;
+    border-bottom: 1px solid #cccccc;
+}
+
+    div.schedule div {
+        height: 24px; /* HourSize / 2 */
+        overflow: hidden;
+        border-top: 1px solid #cccccc;
+    }
+
+        div.schedule div.a, div.fs {
+            background: #ffffff;
+        }
+
+        div.schedule div.hov:hover {
+            background: #c2d7e3;
+        }
+
+        div.schedule div.sa {
+            background: #fcefd4;
+        }
+
+        div.schedule div.na {
+            background: #B6B6B6;
+            border-top: 1px solid #A3A3A3;
+        }
+
+        div.schedule div.da {
+            background: #eca69f;
+        }
+
+        div.schedule div.p {
+            cursor: pointer;
+        }
+
+table.scheduleday {
+    height: 65px;
+}
+
+
+/******************************************************************* bookings */
+div.events {
+  position:relative;  
+}
+table.event {
+  table-layout: fixed;
+  position: absolute; 
+  top: 0; /* Override this value by setting the style property */
+  left: 0; /* Override this value by setting the style property */
+  height: 13px; /* Override this value by setting the style property */
+  width: 100%; /* Override this value by setting the style property */  
+  font-size: 0.9em;  
+}
+table.event td.sb {
+    border:0px;
+    width: 5px;
+    background-color: white;
+    height: auto;
+}
+table.event td.t {
+    border-style: solid;
+    border-width: 1px 1px 2px 0px;
+    border-color: #a0a0a0;
+    background: #001a7a;
+    line-height: 100%;
+    padding: 2px;
+    height: auto;
+}
+table.event td.t div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+table.event td.t div p {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  line-height: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  clip: rect(0 auto auto 0); /* Override this value by setting the style property */
+}
+/** Statuses **/
+table.event td.s0 {
+    background-color: #ddd;
+}
+table.event td.s1 {
+    background-color: #FFC488;
+}
+table.event td.s2 {
+  background-color: #696;
+}
+table.event td.s3 {
+  background-color: #9e6262;
+}
+table.event td.s4 {
+  background-color: #8B4949;
+}
+
+div.event {
+  table-layout: fixed;
+  position: absolute; 
+  top: 0; /* Override this value by setting the style property */
+  left: 0; /* Override this value by setting the style property */
+  height: 13px; /* Override this value by setting the style property */
+  width: 100%; /* Override this value by setting the style property */    
+}
+div.event div.sb {
+    border-style: solid;
+    border-color: #909090;
+    border-width: 1px;
+    width: 7px;
+    background: white;
+    float: left;
+    height: 100%;
+}
+div.event div.t {
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+    border-color: #a0a0a0;
+    background: #001a7a;
+    line-height: 100%;
+    padding: 3px;
+    width: 93%;
+    float: left;
+}
+div.event div.t div.t-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+div.event div.t div p {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  line-height: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  clip: rect(0 auto auto 0); /* Override this value by setting the style property */
+}
+/** Statuses **/
+div.event div.s0 {
+    background-color: #ddd;
+}
+div.event div.s1 {
+    background-color: #FFC488;
+}
+div.event div.s2 {
+  background-color: #696;
+}
+div.event div.s3 {
+  background-color: #9e6262;
+}
+
+
+.c0 {
+    color: white !important
+}
+
+/***** Booking colors are set in the default style sheet *****/
+
+table.event td.res {
+  background-image: url(../images/stripe.png);
+  background-repeat: repeat;
+  background-position: left top;
+}
+table.event td.tpd {
+  background-image: url(../images/stripe.png);
+  background-repeat: repeat;
+  background-position: left top;
+}
+table.event td.p {
+  background: transparent; 
+  width: 1ex;
+  height: auto;
+}
+
+
+/********** Tooltip on bookings ****************/
+.tooltip2
+{
+    width: 250px; 
+    color:#000;
+    text-align: left;
+    font-size: 12px;
+}
+
+.tooltip2 .top
+{
+    padding: 37px 8px 0 13px;
+    overflow: hidden;
+    background: url(../images/toolt.gif) no-repeat top
+}
+
+.tooltip2 b.bottom
+{
+    padding: 3px 8px 15px 13px;
+    color: #548912;
+    background: url(../images/toolt.gif) no-repeat bottom
+}
+
+
+/********** Flip Tooltip on bookings ****************/
+.tooltipv
+{
+    width: 250px; 
+    color:#000;
+    text-align: left;
+    font-size: 12px;
+}
+
+.tooltipv .top
+{
+    padding: 10px 8px 0 13px;
+    overflow: hidden;
+    background: url(../images/tooltv.gif) no-repeat top
+}
+
+.tooltipv b.bottom
+{
+    padding: 37px 8px 0 13px;
+    color: #548912;
+    background: url(../images/tooltv.gif) no-repeat bottom
+}
+
+/**********************************availability cal header*********************/
+.calheader {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.calheader a {
+    margin-right: 30px;
+}
+
+ul.reslist {
+    margin: 10px 0 5px 0;
+}
+
+/******************************************************************* bookings */
+div.schedule_events {
+  position:relative;  
+}
+table.schedule_event {
+  table-layout: fixed;
+  position: absolute; 
+  top: 1px;
+  right: 0; /* Override this value by setting the style property */
+  height: 100%; /* Override this value by setting the style property */
+  width: 3%; /* Override this value by setting the style property */  
+  font-size: 0.9em;  
+}
+
+table.schedule_event td.t {
+    border: 0 ;
+    height: auto;
+    border-style: solid;
+    border-width: 0 2px 2px 1px;
+    border-color: #a0a0a0;
+    border-top: 6px solid #99c8e9;
+}
+table.schedule_event td.t div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding-top:3px;
+}
+
+/**********************************************availability schedule******/
+
+div.availabilitycontainerdiv {
+    position: relative;
+    width: 100%;
+    float: left
+}
+
+.availability-select-view {
+    padding: 0;
+}
+
+div.availabilitydatadiv {
+    overflow-x:scroll;
+    border: 1px solid #ccc;
+    border-left: none;
+    margin-left:152px; 
+    overflow-y:visible;
+    padding-bottom:1px;
+    
+}
+table.availabilitydataview {
+   border: 0 solid #ccc;
+   border-collapse: collapse;
+}
+
+
+table.availabilitydataview th.availabilityHour {
+    min-width: 25px;
+}
+
+table.availabilitydataview td{
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: #cccccc;
+    height: 85px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 0.9em
+}
+.availabilitydataview_calculating {
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    top : 80px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    width: 140px;
+    height: 110px;
+    border-radius: 1px 1px;
+    text-align: center;
+    padding:5px;
+}
+.availabilitydataview_legend {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #ccc !important;
+    margin: 0;
+    display: inline-block
+}
+.availabilitydataview_legend_div {
+    margin-bottom: 5px;
+}
+    .availabilitydataview_legend_div div {
+        margin-top: 9px;
+    }
+    .availabilitydataview_legend_div label {
+        font-weight: normal;
+        margin-right: 20px;
+        margin-left: 5px;
+        display: inline;
+    }
+.availabilitydataview_legend_div .checkbox {
+    margin : 0
+}
+    table.availabilitydataview tr.header th
+     {
+        border-style: solid;
+        border-width: 1px 0 1px 1px;
+        border-color: #cccccc;
+        background: #f9f9f9;
+        font-weight: bold;
+        font-size:0.8em;
+        padding: 1ex 2px 1ex 2px;
+        height: 25px;
+    }
+        table.availabilitydataview tr.header th.active {
+            background: #ccc;
+            border-color: #999;
+            transition: 0.5s;
+            vertical-align: top;
+        }
+
+        table.availabilitydataview tr.header th.active a {
+            display: none;
+        }
+
+    .availabilityDate{
+        min-width: 85px;
+    }
+    
+    .availabilityHour_grey{
+        background-color: #f1f1f1
+    }
+
+    table.availabilitydataview td.availabilitydataview_title, table.availabilitydataview th.availabilitydataview_title{
+        text-align: left;
+        padding-top: 0;
+        position:absolute; 
+        width:152px; 
+        left:0;
+        top:auto;
+        border-bottom: none;
+        font-size: 1em;
+        word-wrap: break-word
+    }
+
+    table.availabilitydataview th.availabilitydataview_title {
+        background: transparent !important;
+        border-width: 1px 0 0 1px !important;
+        text-align: right;
+        padding: 5px !important;
+    }
+
+    table.availabilitydataview tr:last-of-type td.availabilitydataview_title {
+        border-bottom: 1px solid #ccc;
+    }
+
+    table.availabilitydataview div.scheduleview_title label {
+        margin: 0;
+        text-align: center;
+        font-weight: normal
+    }
+
+    table.availabilitydataview td.qtyOk, .availabilitydataview_legend_div span.qtyOk {
+        background: rgb(237, 255, 241); 
+        border-left: 1px solid #C4E0C4;
+        border-bottom: 1px solid #C4E0C4;
+        color:#5cb85c; 
+        transition: background 0.5s;
+        }
+
+    table.availabilitydataview td.qtyFalse, .availabilitydataview_legend_div span.qtyFalse {
+        background: #CA7A7A ;
+        border-left: 1px solid #924A4A;
+        border-bottom: 1px solid #924A4A;
+        color: #eee;
+        transition: background 0.5s;
+    }
+
+table.availabilitydataview td.qtyOk.active {
+    background: rgb(184, 248, 198);
+    border-left: 1px solid #94bc94;
+    border-bottom: 1px solid #94bc94;
+    color: #499e49;
+    transition: background 0.5s;
+}
+
+table.availabilitydataview td.qtyFalse.active {
+    background: #c55e5e;
+    border-left: 1px solid #924A4A;
+    border-bottom: 1px solid #924A4A;
+    color: #eee;
+    transition: background 0.5s;
+}
+    
+.availabilityHour_first {
+    border-left-width: 2px !important;
+}
+
+.scheduleview_title {
+    padding: 5px;
+    font-size: 0.9em;
+    float: left;
+}
+.scheduleview_quantity {
+    margin-top: 4px;
+}
+
+.scheduleview_name{
+    width:92px;
+}
+
+.availabilitydataview_delete {
+    position: absolute;
+    left: 4px;
+    bottom: 1px;
+}
+    .availabilitydataview_delete img {
+        height: 12px;
+        width: 12px;
+    }
+
+.availabilitydataview_view {
+    width: 140px;
+}
+
+.availabilitybasketdiv
+{
+    float: left;
+    width: 14%
+}
+
+.availabilitybasketdiv table td{
+    height: 85px;
+    padding-left:10px;
+    padding-top: 10px
+
+}
+
+.availabilitybasketdiv .inBasketText{
+    font-size: 11px;
+    text-align: left;
+}
+
+.availabilitybasketdiv table th{
+    height: 91px;
+}
+
+.availabilitybasketdiv input{
+    margin-bottom: 0;
+}
+
+div.availability-datepager{
+    float: left;
+}
+div.availability-datepager .datepager{
+    border: none;
+    margin-left: -2px;
+    padding: 0;
+}
+div.availability-datepager .datepager .l{
+    margin-right: 1em;
+}
+
+table.availability-sum {
+    border: 1.8px solid #ccc;
+}
+table.availability-sum th {
+    padding: 1em;
+    border: 1px solid #ccc;
+    width: 14.28%;
+    font-size: 0.8em;
+}
+table.availability-sum td {
+    padding: 1em;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align:middle;
+    height: 65px
+}
+
+
+.day-availability-available {
+    color: green;
+    background-color: rgb(237, 255, 241);
+}
+.day-availability-site-closed{
+    color: gray;
+}
+
+.day-availability-limited {
+    color: #CC6900;
+    background-color: #f7eacd
+}
+
+.day-availability-unavailable {
+    color: #B90000;
+    background-color: #FBEBEE
+}
+
+/******************************************************schedule view on details and time page*****/
+.resource-planner div.availabilitydatadiv, .resource-details div.availabilitydatadiv {
+    margin-left: 50px;
+}
+
+.resource-planner div.availabilitycontainerdiv {
+    height: 170px
+}
+
+.resource-planner .availabilitydataview_legend_div {
+    margin-top: 0
+}
+    .resource-planner .availabilitydataview_legend_div div {
+        margin-top: 0;
+    }
+
+.resource-planner .availabilitybasketdiv, .time-conflict .availabilitybasketdiv {
+    display: none;
+}
+
+.resource-planner table.availabilitydataview td {
+    height: 65px;
+    padding-top: 0;
+    vertical-align: middle;
+}
+
+.resource-planner .availabilitydataview_tall {
+    height: 50px !important;
+}
+
+.resource-planner .availabilitydataview_calculating {
+    left: 40%;
+    margin-right: -50%;
+    top: 20px;
+}
+
+.resource-planner .availabilitydataview_title, .resource-details .availabilitydataview_title {
+    width: 50px !important;
+}
+
+.resource-planner .scheduleview_name {
+    width: 0 !important;
+}
+.resource-planner .scheduleview_title {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+    .resource-planner .scheduleview_title label {
+        font-weight: bold !important;
+        font-size: 11px
+    }
+.resource-planner table.availabilitydataview th.availabilitydataview_title,
+.resource-details table.availabilitydataview th.availabilitydataview_title {
+    text-align: center;
+}
+
+.resource-planner td.availabilitydataview_title,
+.resource-details td.availabilitydataview_title {
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 11px !important;
+}
+
+    .resource-planner td.availabilitydataview_title div.middle, 
+    .resource-details td.availabilitydataview_title div.middle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        vertical-align: middle;
+        margin-top: -25%;
+        margin-left: -25%;
+    }
+
+.time-conflict div.availabilitycontainerdiv {
+    min-height: 190px
+}
+
+.time-conflict .scheduleview_quantity {
+    float: right;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    width:32px
+}
+.time-conflict .scheduleview_quantity label {
+    font-weight: bold !important;
+}
+
+.time-conflict .availabilitydataview_title{
+    width: 125px !important;
+}
+
+.time-conflict  div.availabilitydatadiv {
+    margin-left:125px;     
+}
+
+.time-conflict .availabilitydataview_legend_div {
+    margin-left: 125px;
+    margin-top: 0
+}
